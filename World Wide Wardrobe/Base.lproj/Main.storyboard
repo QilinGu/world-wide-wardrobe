@@ -21,6 +21,7 @@
                                 <rect key="frame" x="202" y="535" width="88" height="30"/>
                                 <state key="normal" title="Go to Outfits"/>
                                 <connections>
+                                    <action selector="onTappedGoToOutfits:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sGE-lu-e84"/>
                                     <segue destination="AqT-xs-h5q" kind="show" identifier="outfitSegue" id="yoF-wZ-1zQ"/>
                                 </connections>
                             </button>
@@ -28,6 +29,7 @@
                                 <rect key="frame" x="415" y="90" width="94" height="30"/>
                                 <state key="normal" title="Go to Clothes"/>
                                 <connections>
+                                    <action selector="onTappedGoToClothes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6kT-s7-XwN"/>
                                     <segue destination="b3s-Gs-tfS" kind="show" identifier="clothesSegue" id="O12-uJ-4jo"/>
                                 </connections>
                             </button>
