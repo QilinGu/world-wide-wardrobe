@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32A3BE4A1CB57417004E7C6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A3BE491CB57417004E7C6E /* AppDelegate.swift */; };
+		32A3BE4C1CB57417004E7C6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A3BE4B1CB57417004E7C6E /* ViewController.swift */; };
+		32A3BE4F1CB57417004E7C6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A3BE4D1CB57417004E7C6E /* Main.storyboard */; };
+		32A3BE511CB57417004E7C6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32A3BE501CB57417004E7C6E /* Assets.xcassets */; };
+		32A3BE541CB57417004E7C6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A3BE521CB57417004E7C6E /* LaunchScreen.storyboard */; };
+		32A3BE5F1CB57418004E7C6E /* World_Wide_WardrobeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A3BE5E1CB57418004E7C6E /* World_Wide_WardrobeTests.swift */; };
+		32A3BE6A1CB57418004E7C6E /* World_Wide_WardrobeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A3BE691CB57418004E7C6E /* World_Wide_WardrobeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32A3BE5B1CB57417004E7C6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32A3BE3E1CB57417004E7C6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32A3BE451CB57417004E7C6E;
+			remoteInfo = "World Wide Wardrobe";
+		};
+		32A3BE661CB57418004E7C6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32A3BE3E1CB57417004E7C6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32A3BE451CB57417004E7C6E;
+			remoteInfo = "World Wide Wardrobe";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32A3BE461CB57417004E7C6E /* World Wide Wardrobe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "World Wide Wardrobe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32A3BE491CB57417004E7C6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		32A3BE4B1CB57417004E7C6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		32A3BE4E1CB57417004E7C6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		32A3BE501CB57417004E7C6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32A3BE531CB57417004E7C6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		32A3BE551CB57417004E7C6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32A3BE5A1CB57417004E7C6E /* World Wide WardrobeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "World Wide WardrobeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32A3BE5E1CB57418004E7C6E /* World_Wide_WardrobeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = World_Wide_WardrobeTests.swift; sourceTree = "<group>"; };
+		32A3BE601CB57418004E7C6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32A3BE651CB57418004E7C6E /* World Wide WardrobeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "World Wide WardrobeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32A3BE691CB57418004E7C6E /* World_Wide_WardrobeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = World_Wide_WardrobeUITests.swift; sourceTree = "<group>"; };
+		32A3BE6B1CB57418004E7C6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32A3BE431CB57417004E7C6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32A3BE571CB57417004E7C6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32A3BE621CB57418004E7C6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32A3BE3D1CB57417004E7C6E = {
+			isa = PBXGroup;
+			children = (
+				32A3BE481CB57417004E7C6E /* World Wide Wardrobe */,
+				32A3BE5D1CB57418004E7C6E /* World Wide WardrobeTests */,
+				32A3BE681CB57418004E7C6E /* World Wide WardrobeUITests */,
+				32A3BE471CB57417004E7C6E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		32A3BE471CB57417004E7C6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32A3BE461CB57417004E7C6E /* World Wide Wardrobe.app */,
+				32A3BE5A1CB57417004E7C6E /* World Wide WardrobeTests.xctest */,
+				32A3BE651CB57418004E7C6E /* World Wide WardrobeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32A3BE481CB57417004E7C6E /* World Wide Wardrobe */ = {
+			isa = PBXGroup;
+			children = (
+				32A3BE491CB57417004E7C6E /* AppDelegate.swift */,
+				32A3BE4B1CB57417004E7C6E /* ViewController.swift */,
+				32A3BE4D1CB57417004E7C6E /* Main.storyboard */,
+				32A3BE501CB57417004E7C6E /* Assets.xcassets */,
+				32A3BE521CB57417004E7C6E /* LaunchScreen.storyboard */,
+				32A3BE551CB57417004E7C6E /* Info.plist */,
+			);
+			path = "World Wide Wardrobe";
+			sourceTree = "<group>";
+		};
+		32A3BE5D1CB57418004E7C6E /* World Wide WardrobeTests */ = {
+			isa = PBXGroup;
+			children = (
+				32A3BE5E1CB57418004E7C6E /* World_Wide_WardrobeTests.swift */,
+				32A3BE601CB57418004E7C6E /* Info.plist */,
+			);
+			path = "World Wide WardrobeTests";
+			sourceTree = "<group>";
+		};
+		32A3BE681CB57418004E7C6E /* World Wide WardrobeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				32A3BE691CB57418004E7C6E /* World_Wide_WardrobeUITests.swift */,
+				32A3BE6B1CB57418004E7C6E /* Info.plist */,
+			);
+			path = "World Wide WardrobeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32A3BE451CB57417004E7C6E /* World Wide Wardrobe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32A3BE6E1CB57418004E7C6E /* Build configuration list for PBXNativeTarget "World Wide Wardrobe" */;
+			buildPhases = (
+				32A3BE421CB57417004E7C6E /* Sources */,
+				32A3BE431CB57417004E7C6E /* Frameworks */,
+				32A3BE441CB57417004E7C6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "World Wide Wardrobe";
+			productName = "World Wide Wardrobe";
+			productReference = 32A3BE461CB57417004E7C6E /* World Wide Wardrobe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32A3BE591CB57417004E7C6E /* World Wide WardrobeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32A3BE711CB57418004E7C6E /* Build configuration list for PBXNativeTarget "World Wide WardrobeTests" */;
+			buildPhases = (
+				32A3BE561CB57417004E7C6E /* Sources */,
+				32A3BE571CB57417004E7C6E /* Frameworks */,
+				32A3BE581CB57417004E7C6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32A3BE5C1CB57417004E7C6E /* PBXTargetDependency */,
+			);
+			name = "World Wide WardrobeTests";
+			productName = "World Wide WardrobeTests";
+			productReference = 32A3BE5A1CB57417004E7C6E /* World Wide WardrobeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		32A3BE641CB57418004E7C6E /* World Wide WardrobeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32A3BE741CB57418004E7C6E /* Build configuration list for PBXNativeTarget "World Wide WardrobeUITests" */;
+			buildPhases = (
+				32A3BE611CB57418004E7C6E /* Sources */,
+				32A3BE621CB57418004E7C6E /* Frameworks */,
+				32A3BE631CB57418004E7C6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32A3BE671CB57418004E7C6E /* PBXTargetDependency */,
+			);
+			name = "World Wide WardrobeUITests";
+			productName = "World Wide WardrobeUITests";
+			productReference = 32A3BE651CB57418004E7C6E /* World Wide WardrobeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32A3BE3E1CB57417004E7C6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "$wag Productions";
+				TargetAttributes = {
+					32A3BE451CB57417004E7C6E = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 747NE49RP5;
+					};
+					32A3BE591CB57417004E7C6E = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 747NE49RP5;
+						TestTargetID = 32A3BE451CB57417004E7C6E;
+					};
+					32A3BE641CB57418004E7C6E = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 747NE49RP5;
+						TestTargetID = 32A3BE451CB57417004E7C6E;
+					};
+				};
+			};
+			buildConfigurationList = 32A3BE411CB57417004E7C6E /* Build configuration list for PBXProject "World Wide Wardrobe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32A3BE3D1CB57417004E7C6E;
+			productRefGroup = 32A3BE471CB57417004E7C6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32A3BE451CB57417004E7C6E /* World Wide Wardrobe */,
+				32A3BE591CB57417004E7C6E /* World Wide WardrobeTests */,
+				32A3BE641CB57418004E7C6E /* World Wide WardrobeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32A3BE441CB57417004E7C6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32A3BE541CB57417004E7C6E /* LaunchScreen.storyboard in Resources */,
+				32A3BE511CB57417004E7C6E /* Assets.xcassets in Resources */,
+				32A3BE4F1CB57417004E7C6E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32A3BE581CB57417004E7C6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32A3BE631CB57418004E7C6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32A3BE421CB57417004E7C6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32A3BE4C1CB57417004E7C6E /* ViewController.swift in Sources */,
+				32A3BE4A1CB57417004E7C6E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32A3BE561CB57417004E7C6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32A3BE5F1CB57418004E7C6E /* World_Wide_WardrobeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32A3BE611CB57418004E7C6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32A3BE6A1CB57418004E7C6E /* World_Wide_WardrobeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32A3BE5C1CB57417004E7C6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32A3BE451CB57417004E7C6E /* World Wide Wardrobe */;
+			targetProxy = 32A3BE5B1CB57417004E7C6E /* PBXContainerItemProxy */;
+		};
+		32A3BE671CB57418004E7C6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32A3BE451CB57417004E7C6E /* World Wide Wardrobe */;
+			targetProxy = 32A3BE661CB57418004E7C6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		32A3BE4D1CB57417004E7C6E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32A3BE4E1CB57417004E7C6E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		32A3BE521CB57417004E7C6E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32A3BE531CB57417004E7C6E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32A3BE6C1CB57418004E7C6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32A3BE6D1CB57418004E7C6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32A3BE6F1CB57418004E7C6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "World Wide Wardrobe/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Swag-Productions.World-Wide-Wardrobe";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		32A3BE701CB57418004E7C6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "World Wide Wardrobe/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Swag-Productions.World-Wide-Wardrobe";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		32A3BE721CB57418004E7C6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "World Wide WardrobeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Swag-Productions.World-Wide-WardrobeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/World Wide Wardrobe.app/World Wide Wardrobe";
+			};
+			name = Debug;
+		};
+		32A3BE731CB57418004E7C6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "World Wide WardrobeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Swag-Productions.World-Wide-WardrobeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/World Wide Wardrobe.app/World Wide Wardrobe";
+			};
+			name = Release;
+		};
+		32A3BE751CB57418004E7C6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "World Wide WardrobeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Swag-Productions.World-Wide-WardrobeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "World Wide Wardrobe";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		32A3BE761CB57418004E7C6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "World Wide WardrobeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Swag-Productions.World-Wide-WardrobeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "World Wide Wardrobe";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32A3BE411CB57417004E7C6E /* Build configuration list for PBXProject "World Wide Wardrobe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32A3BE6C1CB57418004E7C6E /* Debug */,
+				32A3BE6D1CB57418004E7C6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32A3BE6E1CB57418004E7C6E /* Build configuration list for PBXNativeTarget "World Wide Wardrobe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32A3BE6F1CB57418004E7C6E /* Debug */,
+				32A3BE701CB57418004E7C6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		32A3BE711CB57418004E7C6E /* Build configuration list for PBXNativeTarget "World Wide WardrobeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32A3BE721CB57418004E7C6E /* Debug */,
+				32A3BE731CB57418004E7C6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		32A3BE741CB57418004E7C6E /* Build configuration list for PBXNativeTarget "World Wide WardrobeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32A3BE751CB57418004E7C6E /* Debug */,
+				32A3BE761CB57418004E7C6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32A3BE3E1CB57417004E7C6E /* Project object */;
+}
