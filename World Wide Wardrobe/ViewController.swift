@@ -18,13 +18,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate {
        
     }
     
-    //lets user view clothes
-    @IBAction func onTappedGoToClothes(sender: AnyObject) {
-    }
+  
     
-    //lets user go to saved outfits
-    @IBAction func onTappedGoToOutfits(sender: AnyObject) {
-    }
+   
     
   
 
