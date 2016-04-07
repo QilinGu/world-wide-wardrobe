@@ -18,6 +18,7 @@ class ClothesViewController: UIViewController, UIImagePickerControllerDelegate {
         super.viewDidLoad()
 
  }
+    
     //allows user to go to library
     @IBAction func onTappedLibraryButton(sender: AnyObject) {
         imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
