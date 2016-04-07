@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32890BE01CB6C9A0008A97FE /* ClothesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32890BDF1CB6C9A0008A97FE /* ClothesViewController.swift */; };
+		32890BE21CB6C9BF008A97FE /* outfitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32890BE11CB6C9BF008A97FE /* outfitViewController.swift */; };
+		32890BE61CB6CA89008A97FE /* clothingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32890BE51CB6CA89008A97FE /* clothingItem.swift */; };
 		32A3BE4A1CB57417004E7C6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A3BE491CB57417004E7C6E /* AppDelegate.swift */; };
 		32A3BE4C1CB57417004E7C6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A3BE4B1CB57417004E7C6E /* ViewController.swift */; };
 		32A3BE4F1CB57417004E7C6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A3BE4D1CB57417004E7C6E /* Main.storyboard */; };
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		32890BDF1CB6C9A0008A97FE /* ClothesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothesViewController.swift; sourceTree = "<group>"; };
+		32890BE11CB6C9BF008A97FE /* outfitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = outfitViewController.swift; sourceTree = "<group>"; };
+		32890BE51CB6CA89008A97FE /* clothingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = clothingItem.swift; path = ../clothingItem.swift; sourceTree = "<group>"; };
 		32A3BE461CB57417004E7C6E /* World Wide Wardrobe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "World Wide Wardrobe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32A3BE491CB57417004E7C6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32A3BE4B1CB57417004E7C6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,8 +103,11 @@
 		32A3BE481CB57417004E7C6E /* World Wide Wardrobe */ = {
 			isa = PBXGroup;
 			children = (
+				32890BE51CB6CA89008A97FE /* clothingItem.swift */,
 				32A3BE491CB57417004E7C6E /* AppDelegate.swift */,
 				32A3BE4B1CB57417004E7C6E /* ViewController.swift */,
+				32890BDF1CB6C9A0008A97FE /* ClothesViewController.swift */,
+				32890BE11CB6C9BF008A97FE /* outfitViewController.swift */,
 				32A3BE4D1CB57417004E7C6E /* Main.storyboard */,
 				32A3BE501CB57417004E7C6E /* Assets.xcassets */,
 				32A3BE521CB57417004E7C6E /* LaunchScreen.storyboard */,
@@ -259,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32890BE61CB6CA89008A97FE /* clothingItem.swift in Sources */,
 				32A3BE4C1CB57417004E7C6E /* ViewController.swift in Sources */,
 				32A3BE4A1CB57417004E7C6E /* AppDelegate.swift in Sources */,
+				32890BE01CB6C9A0008A97FE /* ClothesViewController.swift in Sources */,
+				32890BE21CB6C9BF008A97FE /* outfitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +499,7 @@
 				32A3BE701CB57418004E7C6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32A3BE711CB57418004E7C6E /* Build configuration list for PBXNativeTarget "World Wide WardrobeTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +508,7 @@
 				32A3BE731CB57418004E7C6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32A3BE741CB57418004E7C6E /* Build configuration list for PBXNativeTarget "World Wide WardrobeUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +517,7 @@
 				32A3BE761CB57418004E7C6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
