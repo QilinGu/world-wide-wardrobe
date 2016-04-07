@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -34,7 +34,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="heC-PK-Wps"/>
+                    <navigationItem key="navigationItem" id="heC-PK-Wps">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3qM-xk-IQB"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -58,10 +60,16 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9l-xO-vrU">
                                 <rect key="frame" x="432" y="197" width="97" height="30"/>
                                 <state key="normal" title="Photo Library"/>
+                                <connections>
+                                    <action selector="onTappedLibraryButton:" destination="b3s-Gs-tfS" eventType="touchUpInside" id="XwG-cv-Osx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2q-n1-gBc">
                                 <rect key="frame" x="432" y="278" width="69" height="30"/>
                                 <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="onTappedCameraButton:" destination="b3s-Gs-tfS" eventType="touchUpInside" id="BjZ-Sq-uF4"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add new clothing item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yd2-nL-b59">
                                 <rect key="frame" x="395" y="116" width="171" height="39"/>
@@ -75,6 +83,9 @@
                             <constraint firstItem="9VS-Oy-8t7" firstAttribute="centerX" secondItem="Pud-d4-4Fw" secondAttribute="centerX" id="Mmd-YQ-kBK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="clothingItemImageView" destination="9VS-Oy-8t7" id="KR6-w4-XSZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hma-g5-sqK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
