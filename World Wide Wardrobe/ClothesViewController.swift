@@ -11,13 +11,22 @@ import UIKit
 class ClothesViewController: UIViewController, UIImagePickerControllerDelegate {
     
     let imagePicker = UIImagePickerController()
+    var clothes : clothingItem!
 
     @IBOutlet weak var clothingItemImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
- }
+        
+            }
+    
+    //puts pictures of clothes into clothingItemImageView
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        imagePicker.dismissViewControllerAnimated(true) { () -> Void in
+            let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+            self.clothingItemImageView.image = selectedImage
+        }
+    }
     
     //allows user to go to library
     @IBAction func onTappedLibraryButton(sender: AnyObject) {
