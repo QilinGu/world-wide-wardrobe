@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		320A28C51CB81F7200479901 /* outfitClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320A28C41CB81F7200479901 /* outfitClass.swift */; };
 		32890BE01CB6C9A0008A97FE /* ClothesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32890BDF1CB6C9A0008A97FE /* ClothesViewController.swift */; };
 		32890BE21CB6C9BF008A97FE /* outfitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32890BE11CB6C9BF008A97FE /* outfitViewController.swift */; };
 		32890BE61CB6CA89008A97FE /* clothingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32890BE51CB6CA89008A97FE /* clothingItem.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		320A28C41CB81F7200479901 /* outfitClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = outfitClass.swift; sourceTree = "<group>"; };
 		32890BDF1CB6C9A0008A97FE /* ClothesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothesViewController.swift; sourceTree = "<group>"; };
 		32890BE11CB6C9BF008A97FE /* outfitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = outfitViewController.swift; sourceTree = "<group>"; };
 		32890BE51CB6CA89008A97FE /* clothingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = clothingItem.swift; path = ../clothingItem.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				32890BE51CB6CA89008A97FE /* clothingItem.swift */,
 				32A3BE491CB57417004E7C6E /* AppDelegate.swift */,
 				32A3BE4B1CB57417004E7C6E /* ViewController.swift */,
+				320A28C41CB81F7200479901 /* outfitClass.swift */,
 				32890BDF1CB6C9A0008A97FE /* ClothesViewController.swift */,
 				32890BE11CB6C9BF008A97FE /* outfitViewController.swift */,
 				32A3BE4D1CB57417004E7C6E /* Main.storyboard */,
@@ -271,6 +274,7 @@
 				32890BE61CB6CA89008A97FE /* clothingItem.swift in Sources */,
 				32A3BE4C1CB57417004E7C6E /* ViewController.swift in Sources */,
 				32A3BE4A1CB57417004E7C6E /* AppDelegate.swift in Sources */,
+				320A28C51CB81F7200479901 /* outfitClass.swift in Sources */,
 				32890BE01CB6C9A0008A97FE /* ClothesViewController.swift in Sources */,
 				32890BE21CB6C9BF008A97FE /* outfitViewController.swift in Sources */,
 			);

@@ -17,4 +17,10 @@ class clothingItem: NSObject {
     //2 is shoes
     var clothingType = ""   //types such as "Formalwear", "Casualwear", etc.
 
+    convenience init(name: String)
+    {
+        self.init()
+        self.name = name
+    }
+    
 }
