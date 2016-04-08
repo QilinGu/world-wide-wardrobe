@@ -20,6 +20,18 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate {
     
   
     
+    @IBAction func onAddButtonTapped(sender: AnyObject) {
+        
+    let alert = UIAlertController(title: "Add Clothes", message: nil, preferredStyle: .Alert)
+        alert.addTextFieldWithConfigurationHandler { (nameTextField) -> Void in
+            nameTextField.placeholder = "Name"
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Default, handler: nil)
+        alert.addAction(cancelAction)
+        let confirmAction = UIAlertAction(title: "Confirm", style: .Default) { (action) -> Void in
+            
+        }
+    }
    
     
   
