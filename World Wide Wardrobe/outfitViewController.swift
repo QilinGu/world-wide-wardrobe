@@ -10,6 +10,14 @@ import UIKit
 
 class outfitViewController: UIViewController {
 
+    @IBOutlet var tableView: UITableView!
+    @IBOutlet var editButton: UIBarButtonItem!
+    @IBOutlet var addButton: UIBarButtonItem!
+    
+    var outfit = []
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
