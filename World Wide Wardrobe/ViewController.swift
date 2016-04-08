@@ -13,6 +13,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate {
     
     let imagePicker = UIImagePickerController()
     
+    var clothesArray : [clothingItem] = []
+    var outfitsArray : [outfitObject] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        
@@ -28,9 +31,27 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate {
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: .Default, handler: nil)
         alert.addAction(cancelAction)
-        let confirmAction = UIAlertAction(title: "Confirm", style: .Default) { (action) -> Void in
+        let addTopAction = UIAlertAction(title: "Add Top", style: .Default) { (action) -> Void in
+            let nameTextField = alert.textFields![0] as UITextField
+            self.clothesArray.append(clothingItem(name: nameTextField.text!))
             
         }
+        alert.addAction(addTopAction)
+        let addBottomAction = UIAlertAction(title: "Add Bottom", style: .Default) { (action) -> Void in
+            let nameTextField = alert.textFields![0] as UITextField
+            self.clothesArray.append(clothingItem(name: nameTextField.text!))
+            
+        }
+        alert.addAction(addBottomAction)
+
+        let addShoeAction = UIAlertAction(title: "Add Shoes", style: .Default) { (action) -> Void in
+            let nameTextField = alert.textFields![0] as UITextField
+            self.clothesArray.append(clothingItem(name: nameTextField.text!))
+            
+        }
+        alert.addAction(addShoeAction)
+
+        self.presentViewController(alert, animated: true, completion: nil)
     }
    
     
