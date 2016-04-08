@@ -35,7 +35,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="heC-PK-Wps">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3qM-xk-IQB"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3qM-xk-IQB">
+                            <connections>
+                                <action selector="onAddButtonTapped:" destination="BYZ-38-t0r" id="Pj6-Z6-f4J"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
