@@ -16,5 +16,11 @@ class clothingItem: NSObject {
     //1 is pants
     //2 is shoes
     var clothingType = ""   //types such as "Formalwear", "Casualwear", etc.
+    var clothingItemImage = UIImage(named: "Default")
+    
+    convenience init(clothingItemImage: UIImage){
+        self.init()
+        self.clothingItemImage = clothingItemImage 
+    }
 
 }
