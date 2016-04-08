@@ -61,7 +61,6 @@
         <!--View Controller-->
         <scene sceneID="po2-Sq-rVF">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fTT-D4-hdW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="AqT-xs-h5q" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="siL-aW-XJL">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -127,6 +126,7 @@
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fTT-D4-hdW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="832" y="1685"/>
         </scene>
