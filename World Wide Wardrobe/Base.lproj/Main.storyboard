@@ -98,7 +98,6 @@
         <!--Outfit View Controller-->
         <scene sceneID="po2-Sq-rVF">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fTT-D4-hdW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="AqT-xs-h5q" customClass="outfitViewController" customModule="World_Wide_Wardrobe" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="PGJ-gc-1ie">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -116,8 +115,16 @@
                         </prototypes>
                     </tableView>
                     <toolbarItems>
-                        <barButtonItem systemItem="add" id="4zs-Uq-RFb"/>
-                        <barButtonItem systemItem="edit" id="oWU-cL-7ON"/>
+                        <barButtonItem systemItem="add" id="4zs-Uq-RFb">
+                            <connections>
+                                <action selector="onAddButtonTapped:" destination="AqT-xs-h5q" id="fwn-ds-ds6"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="edit" id="oWU-cL-7ON">
+                            <connections>
+                                <action selector="onEditButtonTapped:" destination="AqT-xs-h5q" id="7tD-4F-bir"/>
+                            </connections>
+                        </barButtonItem>
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -126,6 +133,7 @@
                         <outlet property="tableView" destination="PGJ-gc-1ie" id="Cfd-fj-qBN"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fTT-D4-hdW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="832" y="1723"/>
         </scene>
