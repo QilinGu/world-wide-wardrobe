@@ -10,18 +10,82 @@ import UIKit
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate {
 
+    @IBOutlet weak var topsImageView: UIImageView!
+    @IBOutlet weak var pantsImageView: UIImageView!
+    @IBOutlet weak var shoesImageView: UIImageView!
+    
+    @IBOutlet weak var shirtIncreaseArrow: UIButton!
+    @IBOutlet weak var shirtDecreaseArrow: UIButton!
     
     let imagePicker = UIImagePickerController()
     
     var clothesArray : [clothingItem] = []
     var outfitsArray : [outfitObject] = []
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-       
+    var shirtImagesArray : [UIImage] = []
+    var pantsImagesArray : [UIImage] = []
+    var shoesImagesArray : [UIImage] = []
+    
+    var outfitShirtNumber = 0
+    var outfitPantsNumber = 0
+    var outfitShoesNumber = 0
+    
+    func checkArrowAlpha()
+    {
+        if outfitShirtNumber == 0
+        {
+            shirtDecreaseArrow.alpha = 0.5
+        } else {
+            shirtDecreaseArrow.alpha = 1
+        }
+        
+        if outfitShirtNumber == shirtImagesArray.count
+        {
+            shirtIncreaseArrow.alpha = 0.5
+        } else {
+            shirtIncreaseArrow.alpha = 1
+        }
     }
     
+    func updateOutfitImages()
+    {
+        if shirtImagesArray.count > 0
+        {
+            topsImageView.image = shirtImagesArray[outfitShirtNumber]
+        }
+        if pantsImagesArray.count > 0
+        {
+            pantsImageView.image = pantsImagesArray[outfitPantsNumber]
+        }
+        if shoesImagesArray.count > 0
+        {
+            shoesImageView.image = shoesImagesArray[outfitShoesNumber]
+        }
+        checkArrowAlpha()
+    }
+    
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        updateOutfitImages()
+        checkArrowAlpha()
+    }
+    
+    @IBAction func increaseShirtArrow(sender: AnyObject) {
+        if outfitShirtNumber < shirtImagesArray.count
+        {
+            outfitShirtNumber++
+            updateOutfitImages()
+        }
+    }
   
+    @IBAction func decreaseShirtArrow(sender: AnyObject) {
+        if outfitShirtNumber > 0
+        {
+            outfitShirtNumber--
+            updateOutfitImages()
+        }
+    }
     
     @IBAction func onAddButtonTapped(sender: AnyObject) {
         

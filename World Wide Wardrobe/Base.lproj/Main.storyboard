@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BNc-G5-lTe">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -18,17 +18,60 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wL-8B-EtP">
-                                <rect key="frame" x="202" y="535" width="88" height="30"/>
+                                <rect key="frame" x="218" y="550" width="88" height="30"/>
                                 <state key="normal" title="Go to Outfits"/>
                                 <connections>
                                     <segue destination="AqT-xs-h5q" kind="show" identifier="outfitSegue" id="yoF-wZ-1zQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Mh-ue-fX1">
-                                <rect key="frame" x="239" y="230" width="94" height="30"/>
+                                <rect key="frame" x="212" y="111" width="94" height="30"/>
                                 <state key="normal" title="Go to Clothes"/>
                                 <connections>
                                     <segue destination="b3s-Gs-tfS" kind="show" identifier="clothesSegue" id="O12-uJ-4jo"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5c7-8x-roN">
+                                <rect key="frame" x="66" y="285" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Dj-ql-1Tf">
+                                <rect key="frame" x="66" y="421" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Glt-C9-Bg2">
+                                <rect key="frame" x="66" y="149" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61c-YS-K0H">
+                                <rect key="frame" x="66" y="550" width="76" height="30"/>
+                                <state key="normal" title="Save Outfit"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zof-ZO-Iwz">
+                                <rect key="frame" x="314" y="191" width="51" height="44"/>
+                                <state key="normal" title="Button" image="arrowRight"/>
+                                <connections>
+                                    <action selector="increaseShirtArrow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v8e-UN-mln"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQu-nh-6eL">
+                                <rect key="frame" x="314" y="327" width="51" height="44"/>
+                                <state key="normal" title="Button" image="arrowRight"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ti-6x-t96">
+                                <rect key="frame" x="314" y="463" width="51" height="44"/>
+                                <state key="normal" title="Button" image="arrowRight"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ee-2j-uRn">
+                                <rect key="frame" x="7" y="463" width="51" height="44"/>
+                                <state key="normal" title="Button" image="arrowLeft"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ni-0a-y2D">
+                                <rect key="frame" x="7" y="327" width="51" height="44"/>
+                                <state key="normal" title="Button" image="arrowLeft"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQs-Y2-Y3T">
+                                <rect key="frame" x="7" y="191" width="51" height="44"/>
+                                <state key="normal" title="Button" image="arrowLeft"/>
+                                <connections>
+                                    <action selector="decreaseShirtArrow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e4X-Mq-slT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -41,6 +84,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="pantsImageView" destination="5c7-8x-roN" id="Hff-1w-RUt"/>
+                        <outlet property="shirtDecreaseArrow" destination="AQs-Y2-Y3T" id="wIO-U0-tM9"/>
+                        <outlet property="shirtIncreaseArrow" destination="Zof-ZO-Iwz" id="gtu-QA-ige"/>
+                        <outlet property="shoesImageView" destination="6Dj-ql-1Tf" id="YYA-ko-ZYN"/>
+                        <outlet property="topsImageView" destination="Glt-C9-Bg2" id="6gA-Ff-jDx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -157,6 +207,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrowLeft" width="600" height="452"/>
+        <image name="arrowRight" width="600" height="452"/>
         <image name="placeholder" width="128" height="128"/>
     </resources>
 </document>
