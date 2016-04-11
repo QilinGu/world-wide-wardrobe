@@ -16,11 +16,11 @@ class clothingItem: NSObject {
     //1 is pants
     //2 is shoes
     var clothingType = ""   //types such as "Formalwear", "Casualwear", etc.
-    var clothingItemImage = UIImage(named: "Default")
+    var clothingItemImage = UIImage(named: "placeholder")
     
     convenience init(clothingItemImage: UIImage){
         self.init()
-        self.clothingItemImage = clothingItemImage 
+        self.clothingItemImage = clothingItemImage
     }
 
     convenience init(name: String)

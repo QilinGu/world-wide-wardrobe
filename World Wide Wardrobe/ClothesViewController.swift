@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import SafariServices
 
-class ClothesViewController: UIViewController, UIImagePickerControllerDelegate {
+class ClothesViewController: UIViewController, SFSafariViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     let imagePicker = UIImagePickerController()
     var clothes : clothingItem!
@@ -17,6 +18,7 @@ class ClothesViewController: UIViewController, UIImagePickerControllerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        clothingItemImageView.image = clothes.clothingItemImage 
         
             }
     

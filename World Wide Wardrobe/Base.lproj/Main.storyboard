@@ -98,7 +98,6 @@
         <!--Outfit View Controller-->
         <scene sceneID="po2-Sq-rVF">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fTT-D4-hdW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="AqT-xs-h5q" customClass="outfitViewController" customModule="World_Wide_Wardrobe" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="PGJ-gc-1ie">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -126,6 +125,7 @@
                         <outlet property="tableView" destination="PGJ-gc-1ie" id="Cfd-fj-qBN"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fTT-D4-hdW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="832" y="1723"/>
         </scene>
