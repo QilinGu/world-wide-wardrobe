@@ -9,7 +9,7 @@
 import UIKit
 import SafariServices
 
-class ClothesViewController: UIViewController, SFSafariViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ClothesViewController: UIViewController, SFSafariViewControllerDelegate, UIImagePickerControllerDelegate {
     
     let imagePicker = UIImagePickerController()
     var clothes : clothingItem!
@@ -18,8 +18,7 @@ class ClothesViewController: UIViewController, SFSafariViewControllerDelegate, U
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        clothingItemImageView.image = clothes.clothingItemImage 
-        
+        clothingItemImageView.image = clothes.clothingItemImage
             }
     
     //puts pictures of clothes into clothingItemImageView
@@ -44,5 +43,8 @@ class ClothesViewController: UIViewController, SFSafariViewControllerDelegate, U
         }
     }
     
+    @IBAction func onTappedSaveButton(sender: AnyObject) {
+        clothes.clothingItemImage = clothingItemImageView.image! 
+    }
     
 }
