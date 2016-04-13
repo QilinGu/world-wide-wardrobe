@@ -16,15 +16,19 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate {
     
     @IBOutlet weak var shirtIncreaseArrow: UIButton!
     @IBOutlet weak var shirtDecreaseArrow: UIButton!
+    @IBOutlet weak var pantsIncreaseArrow: UIButton!
+    @IBOutlet weak var pantsDecreaseArrow: UIButton!
+    @IBOutlet weak var shoesIncreaseArrow: UIButton!
+    @IBOutlet weak var shoesDecreaseArrow: UIButton!
     
     let imagePicker = UIImagePickerController()
     
     var clothesArray : [clothingItem] = []
     var outfitsArray : [outfitObject] = []
     
-    var shirtImagesArray : [UIImage] = []
-    var pantsImagesArray : [UIImage] = []
-    var shoesImagesArray : [UIImage] = []
+    var shirtImagesArray : [UIImage] = [UIImage(named: "placeholder")!,UIImage(named: "placeholder2")!,UIImage(named: "placeholder3")!]
+    var pantsImagesArray : [UIImage] = [UIImage(named: "placeholder4")!,UIImage(named: "placeholder5")!,UIImage(named: "placeholder6")!]
+    var shoesImagesArray : [UIImage] = [UIImage(named: "placeholder7")!,UIImage(named: "placeholder8")!,UIImage(named: "placeholder9")!]
     
     var outfitShirtNumber = 0
     var outfitPantsNumber = 0
@@ -41,11 +45,39 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate {
             shirtDecreaseArrow.alpha = 1
         }
         
-        if outfitShirtNumber == shirtImagesArray.count
+        if outfitShirtNumber == shirtImagesArray.count - 1
         {
             shirtIncreaseArrow.alpha = 0.5
         } else {
             shirtIncreaseArrow.alpha = 1
+        }
+        
+        if outfitPantsNumber == 0
+        {
+            pantsDecreaseArrow.alpha = 0.5
+        } else {
+            pantsDecreaseArrow.alpha = 1
+        }
+        
+        if outfitPantsNumber == pantsImagesArray.count - 1
+        {
+            pantsIncreaseArrow.alpha = 0.5
+        } else {
+            pantsIncreaseArrow.alpha = 1
+        }
+
+        if outfitShoesNumber == 0
+        {
+            shoesDecreaseArrow.alpha = 0.5
+        } else {
+            shoesDecreaseArrow.alpha = 1
+        }
+        
+        if outfitShoesNumber == shoesImagesArray.count - 1
+        {
+            shoesIncreaseArrow.alpha = 0.5
+        } else {
+            shoesIncreaseArrow.alpha = 1
         }
     }
     
@@ -73,8 +105,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate {
         checkArrowAlpha()
     }
     
+    //On Arrow Tapped Actions
     @IBAction func increaseShirtArrow(sender: AnyObject) {
-        if outfitShirtNumber < shirtImagesArray.count
+        if outfitShirtNumber < shirtImagesArray.count - 1
         {
             outfitShirtNumber++
             updateOutfitImages()
@@ -88,6 +121,39 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate {
             updateOutfitImages()
         }
     }
+    
+    @IBAction func increasePantsArrow(sender: AnyObject) {
+        if outfitPantsNumber < pantsImagesArray.count - 1
+        {
+            outfitPantsNumber++
+            updateOutfitImages()
+        }
+    }
+    
+    @IBAction func decreasePantsArrow(sender: AnyObject) {
+        if outfitPantsNumber > 0
+        {
+            outfitPantsNumber--
+            updateOutfitImages()
+        }
+    }
+    
+    @IBAction func increaseShoesArrow(sender: AnyObject) {
+        if outfitShoesNumber < shoesImagesArray.count - 1
+        {
+            outfitShoesNumber++
+            updateOutfitImages()
+        }
+    }
+    
+    @IBAction func decreaseShoesArrow(sender: AnyObject) {
+        if outfitShoesNumber > 0
+        {
+            outfitShoesNumber--
+            updateOutfitImages()
+        }
+    }
+    //////
     
     @IBAction func onAddButtonTapped(sender: AnyObject) {
         
