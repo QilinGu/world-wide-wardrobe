@@ -172,8 +172,16 @@
                         </prototypes>
                     </tableView>
                     <toolbarItems>
-                        <barButtonItem systemItem="add" id="4zs-Uq-RFb"/>
-                        <barButtonItem systemItem="edit" id="oWU-cL-7ON"/>
+                        <barButtonItem systemItem="add" id="4zs-Uq-RFb">
+                            <connections>
+                                <action selector="onAddButtonTapped:" destination="AqT-xs-h5q" id="fwn-ds-ds6"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="edit" id="oWU-cL-7ON">
+                            <connections>
+                                <action selector="onEditButtonTapped:" destination="AqT-xs-h5q" id="7tD-4F-bir"/>
+                            </connections>
+                        </barButtonItem>
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
