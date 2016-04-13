@@ -30,6 +30,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate {
     var outfitPantsNumber = 0
     var outfitShoesNumber = 0
     
+    
+    
     func checkArrowAlpha()
     {
         if outfitShirtNumber == 0

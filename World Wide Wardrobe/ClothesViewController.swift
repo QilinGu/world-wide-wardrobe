@@ -9,16 +9,19 @@
 import UIKit
 import SafariServices
 
-class ClothesViewController: UIViewController, SFSafariViewControllerDelegate, UIImagePickerControllerDelegate {
+class ClothesViewController: UIViewController, SFSafariViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     let imagePicker = UIImagePickerController()
-    var clothes : clothingItem!
+    var clothes = clothingItem(clothingItemImage: UIImage(named: "placeholder")!)
+    var clothesArray : [clothingItem] = []
 
     @IBOutlet weak var clothingItemImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       // clothesArray.append(clothingItem(clothingItemImage: UIImage(named: "placeholder")!))
         clothingItemImageView.image = clothes.clothingItemImage
+        imagePicker.delegate = self
             }
     
     //puts pictures of clothes into clothingItemImageView

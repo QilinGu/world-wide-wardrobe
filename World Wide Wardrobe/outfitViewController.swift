@@ -17,7 +17,6 @@ class outfitViewController: UIViewController, UITableViewDataSource, UITableView
     var outfit : [outfitObject] = []
     
 
-    
     override func viewDidLoad() {
         editButton.tag = 0
         super.viewDidLoad()
