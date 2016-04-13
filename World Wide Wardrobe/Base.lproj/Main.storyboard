@@ -54,18 +54,30 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQu-nh-6eL">
                                 <rect key="frame" x="314" y="327" width="51" height="44"/>
                                 <state key="normal" title="Button" image="arrowRight"/>
+                                <connections>
+                                    <action selector="increasePantsArrow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U1A-Vu-de0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ti-6x-t96">
                                 <rect key="frame" x="314" y="463" width="51" height="44"/>
                                 <state key="normal" title="Button" image="arrowRight"/>
+                                <connections>
+                                    <action selector="increaseShoesArrow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2YX-7X-kN0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ee-2j-uRn">
                                 <rect key="frame" x="7" y="463" width="51" height="44"/>
                                 <state key="normal" title="Button" image="arrowLeft"/>
+                                <connections>
+                                    <action selector="decreaseShoesArrow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qgh-Cd-7Xt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ni-0a-y2D">
                                 <rect key="frame" x="7" y="327" width="51" height="44"/>
                                 <state key="normal" title="Button" image="arrowLeft"/>
+                                <connections>
+                                    <action selector="decreasePantsArrow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8IS-xr-B49"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQs-Y2-Y3T">
                                 <rect key="frame" x="7" y="191" width="51" height="44"/>
@@ -85,10 +97,14 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="pantsDecreaseArrow" destination="9ni-0a-y2D" id="QOb-NI-0Fr"/>
                         <outlet property="pantsImageView" destination="5c7-8x-roN" id="Hff-1w-RUt"/>
+                        <outlet property="pantsIncreaseArrow" destination="dQu-nh-6eL" id="066-vb-dO1"/>
                         <outlet property="shirtDecreaseArrow" destination="AQs-Y2-Y3T" id="wIO-U0-tM9"/>
                         <outlet property="shirtIncreaseArrow" destination="Zof-ZO-Iwz" id="gtu-QA-ige"/>
+                        <outlet property="shoesDecreaseArrow" destination="6ee-2j-uRn" id="EpK-oF-XoP"/>
                         <outlet property="shoesImageView" destination="6Dj-ql-1Tf" id="YYA-ko-ZYN"/>
+                        <outlet property="shoesIncreaseArrow" destination="7Ti-6x-t96" id="7gY-eU-TNk"/>
                         <outlet property="topsImageView" destination="Glt-C9-Bg2" id="6gA-Ff-jDx"/>
                     </connections>
                 </viewController>
