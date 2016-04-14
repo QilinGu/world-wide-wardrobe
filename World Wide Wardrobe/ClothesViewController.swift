@@ -21,6 +21,9 @@ class ClothesViewController: UIViewController, UITableViewDataSource, SFSafariVi
         super.viewDidLoad()
         clothingItemImageView.image = clothes.clothingItemImage
         imagePicker.delegate = self
+       clothesArray.append(clothingItem(clothingType: "Top"))
+        clothesArray.append(clothingItem(clothingType: "Bottom"))
+        clothesArray.append(clothingItem(clothingType: "Shoes"))
             }
     
     //puts pictures of clothes into clothingItemImageView
@@ -37,7 +40,7 @@ class ClothesViewController: UIViewController, UITableViewDataSource, SFSafariVi
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("My Cell", forIndexPath: indexPath)
-       cell.textLabel?.text = clothesArray[indexPath.row].name
+       cell.textLabel?.text = clothesArray[indexPath.row].clothingType
         return cell
     }
     

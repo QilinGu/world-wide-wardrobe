@@ -30,4 +30,10 @@ class clothingItem: NSObject {
         self.image = image
     }
     
+    convenience init(clothingType: String)
+    {
+        self.init()
+        self.clothingType = clothingType 
+    }
+    
 }
