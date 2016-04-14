@@ -19,7 +19,6 @@ class ClothesViewController: UIViewController, SFSafariViewControllerDelegate, U
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       // clothesArray.append(clothingItem(clothingItemImage: UIImage(named: "placeholder")!))
         clothingItemImageView.image = clothes.clothingItemImage
         imagePicker.delegate = self
             }
@@ -47,7 +46,18 @@ class ClothesViewController: UIViewController, SFSafariViewControllerDelegate, U
     }
     
     @IBAction func onTappedSaveButton(sender: AnyObject) {
-        clothes.clothingItemImage = clothingItemImageView.image! 
+        let alert = UIAlertController(title: "What is this item?", message: nil, preferredStyle: .Alert)
+        alert.addTextFieldWithConfigurationHandler { (textField) -> Void in
+            textField.placeholder = "Add Item"
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+        alert.addAction(cancelAction)
+        let addAction = UIAlertAction(title: "Save", style: .Default) { (action) -> Void in
+            
+           }
+        
+        alert.addAction(addAction)
+        self.presentViewController(alert, animated: true, completion: nil)
     }
     
 }

@@ -132,14 +132,14 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9l-xO-vrU">
-                                <rect key="frame" x="205" y="206" width="97" height="30"/>
+                                <rect key="frame" x="290" y="205" width="97" height="30"/>
                                 <state key="normal" title="Photo Library"/>
                                 <connections>
                                     <action selector="onTappedLibraryButton:" destination="b3s-Gs-tfS" eventType="touchUpInside" id="XwG-cv-Osx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2q-n1-gBc">
-                                <rect key="frame" x="219" y="270" width="69" height="30"/>
+                                <rect key="frame" x="304" y="266" width="69" height="30"/>
                                 <state key="normal" title="Camera"/>
                                 <connections>
                                     <action selector="onTappedCameraButton:" destination="b3s-Gs-tfS" eventType="touchUpInside" id="BjZ-Sq-uF4"/>
@@ -151,19 +151,33 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsM-YJ-jcH">
-                                <rect key="frame" x="225" y="383" width="34" height="30"/>
-                                <state key="normal" title="Save"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="acj-py-Bif">
+                                <rect key="frame" x="130" y="287" width="290" height="159"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyCell" id="rar-1r-RIx">
+                                        <rect key="frame" x="0.0" y="28" width="290" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rar-1r-RIx" id="mwN-FB-uSW">
+                                            <rect key="frame" x="0.0" y="0.0" width="290" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
-                                    <action selector="onTappedSaveButton:" destination="b3s-Gs-tfS" eventType="touchUpInside" id="htD-Rn-qGk"/>
+                                    <outlet property="dataSource" destination="b3s-Gs-tfS" id="iGn-Xr-chx"/>
+                                    <outlet property="delegate" destination="b3s-Gs-tfS" id="rIv-66-Wpb"/>
                                 </connections>
-                            </button>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="acj-py-Bif" firstAttribute="centerX" secondItem="Pud-d4-4Fw" secondAttribute="centerX" id="KZO-oS-xJX"/>
                             <constraint firstItem="9VS-Oy-8t7" firstAttribute="centerX" secondItem="Pud-d4-4Fw" secondAttribute="centerX" id="Mmd-YQ-kBK"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="clothingItemImageView" destination="9VS-Oy-8t7" id="KR6-w4-XSZ"/>
                     </connections>
