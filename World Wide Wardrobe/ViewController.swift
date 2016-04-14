@@ -165,20 +165,25 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate {
         alert.addAction(cancelAction)
         let addTopAction = UIAlertAction(title: "Add Top", style: .Default) { (action) -> Void in
             let nameTextField = alert.textFields![0] as UITextField
-            self.clothesArray.append(clothingItem(name: nameTextField.text!))
+            self.clothesArray.append(clothingItem(name: nameTextField.text!,image: UIImage(named: "placeholder")!))
+            self.shirtImagesArray.append(self.clothesArray[self.clothesArray.count - 1].image!)
+            self.checkArrowAlpha()
             
         }
         alert.addAction(addTopAction)
         let addBottomAction = UIAlertAction(title: "Add Bottom", style: .Default) { (action) -> Void in
             let nameTextField = alert.textFields![0] as UITextField
-            self.clothesArray.append(clothingItem(name: nameTextField.text!))
-            
+            self.clothesArray.append(clothingItem(name: nameTextField.text!,image: UIImage(named: "placeholder4")!))
+            self.shirtImagesArray.append(self.clothesArray[self.clothesArray.count - 1].image!)
+            self.checkArrowAlpha()
         }
         alert.addAction(addBottomAction)
 
         let addShoeAction = UIAlertAction(title: "Add Shoes", style: .Default) { (action) -> Void in
             let nameTextField = alert.textFields![0] as UITextField
-            self.clothesArray.append(clothingItem(name: nameTextField.text!))
+            self.clothesArray.append(clothingItem(name: nameTextField.text!,image: UIImage(named: "placeholder7")!))
+            self.shirtImagesArray.append(self.clothesArray[self.clothesArray.count - 1].image!)
+            self.checkArrowAlpha()
             
         }
         alert.addAction(addShoeAction)

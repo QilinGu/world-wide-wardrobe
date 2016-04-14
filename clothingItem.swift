@@ -23,10 +23,11 @@ class clothingItem: NSObject {
         self.clothingItemImage = clothingItemImage
     }
 
-    convenience init(name: String)
+    convenience init(name: String,image: UIImage)
     {
         self.init()
         self.name = name
+        self.image = image
     }
     
 }
