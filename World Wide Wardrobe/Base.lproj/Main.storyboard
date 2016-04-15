@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
         <!--Modal Instructions View Controller-->
@@ -244,21 +245,26 @@
                         </prototypes>
                     </tableView>
                     <toolbarItems>
-                        <barButtonItem systemItem="add" id="4zs-Uq-RFb">
-                            <connections>
-                                <action selector="onAddButtonTapped:" destination="AqT-xs-h5q" id="fwn-ds-ds6"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem systemItem="edit" id="oWU-cL-7ON">
-                            <connections>
-                                <action selector="onEditButtonTapped:" destination="AqT-xs-h5q" id="7tD-4F-bir"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem id="Uw9-WS-gNt"/>
                     </toolbarItems>
+                    <navigationItem key="navigationItem" id="aOx-pX-xZC">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="4zs-Uq-RFb">
+                                <connections>
+                                    <action selector="onAddButtonTapped:" destination="AqT-xs-h5q" id="fwn-ds-ds6"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="edit" id="oWU-cL-7ON">
+                                <connections>
+                                    <action selector="onEditButtonTapped:" destination="AqT-xs-h5q" id="7tD-4F-bir"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="add" destination="4zs-Uq-RFb" id="TK2-sp-h1Y"/>
-                        <outlet property="edit" destination="4zs-Uq-RFb" id="fdw-7G-0wg"/>
+                        <outlet property="addButton" destination="4zs-Uq-RFb" id="Rv7-sG-cMw"/>
+                        <outlet property="editButton" destination="oWU-cL-7ON" id="Zvi-2M-2my"/>
                         <outlet property="tableView" destination="PGJ-gc-1ie" id="Cfd-fj-qBN"/>
                     </connections>
                 </viewController>
