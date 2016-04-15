@@ -14,7 +14,8 @@ class ClothesViewController: UIViewController, UITableViewDataSource, SFSafariVi
     let imagePicker = UIImagePickerController()
     var clothes = clothingItem(clothingItemImage: UIImage(named: "placeholder")!)
     var clothesArray : [clothingItem] = []
-
+    var pickerFrame: CGRect = CGRectMake(17, 52, 270, 100); // CGRectMake(left), top, width, height) - left and top are like margins
+    
     @IBOutlet weak var clothingItemImageView: UIImageView!
     
     override func viewDidLoad() {
@@ -25,6 +26,28 @@ class ClothesViewController: UIViewController, UITableViewDataSource, SFSafariVi
         clothesArray.append(clothingItem(clothingType: "Bottom"))
         clothesArray.append(clothingItem(clothingType: "Shoes"))
             }
+    
+    
+    func showPickerInActionSheet(sentBy: String) {
+        var title = "Save"
+        var message = "What clothing type is this?"
+        var picker: UIPickerView = UIPickerView(frame: pickerFrame)
+        var alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.ActionSheet);
+        alert.modalInPopover = true
+       
+        if(sentBy == "top"){
+            picker.tag = 1;
+        } else if (sentBy == "shoes"){
+            picker.tag = 2;
+        } else if (sentBy == "shoes"){
+                picker.tag = 3;
+        } else {
+            picker.tag = 0;
+        }
+        picker.delegate = self
+        picker.dataSource = self
+    }
+    
     
     //puts pictures of clothes into clothingItemImageView
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
@@ -77,9 +100,7 @@ class ClothesViewController: UIViewController, UITableViewDataSource, SFSafariVi
     
     @IBAction func onTappedSave(sender: AnyObject) {
         let alert = UIAlertController(title: "What is this item?", message: nil, preferredStyle: .Alert)
-        alert.addTextFieldWithConfigurationHandler { (textField) -> Void in
-            textField.placeholder = "Add Item"
-        }
+        alert.view.addSubview(picker)
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
         alert.addAction(cancelAction)
         let addAction = UIAlertAction(title: "Save", style: .Default) { (action) -> Void in
@@ -88,6 +109,7 @@ class ClothesViewController: UIViewController, UITableViewDataSource, SFSafariVi
         
         alert.addAction(addAction)
         self.presentViewController(alert, animated: true, completion: nil)
+        
     }
     
 }
