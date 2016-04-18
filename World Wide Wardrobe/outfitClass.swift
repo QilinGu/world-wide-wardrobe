@@ -13,13 +13,15 @@ class outfitObject: NSObject {
     var topImage = UIImage(named: "placeholder")
     var bottomImage = UIImage(named: "placeholder")
     var shoesImage = UIImage(named: "placeholder")
+    var outfitName = ""
     
-    convenience init(topImage: UIImage, bottomImage: UIImage, shoesImage: UIImage)
+    convenience init(topImage: UIImage, bottomImage: UIImage, shoesImage: UIImage,outfitName: String)
     {
         self.init()
         self.topImage = topImage
         self.bottomImage = bottomImage
         self.shoesImage = shoesImage
+        self.outfitName = outfitName
     }
     
 }

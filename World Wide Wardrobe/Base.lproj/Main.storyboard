@@ -82,6 +82,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61c-YS-K0H">
                                 <rect key="frame" x="66" y="550" width="76" height="30"/>
                                 <state key="normal" title="Save Outfit"/>
+                                <connections>
+                                    <action selector="onSaveOutfitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d4c-jU-6x3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zof-ZO-Iwz">
                                 <rect key="frame" x="314" y="191" width="51" height="44"/>
