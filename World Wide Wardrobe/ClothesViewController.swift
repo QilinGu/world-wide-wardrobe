@@ -44,8 +44,8 @@ class ClothesViewController: UIViewController, UITableViewDataSource, SFSafariVi
         } else {
             picker.tag = 0;
         }
-        picker.delegate = self
-        picker.dataSource = self
+     //   picker.delegate = self
+      //  picker.dataSource = self
     }
     
     
@@ -100,7 +100,7 @@ class ClothesViewController: UIViewController, UITableViewDataSource, SFSafariVi
     
     @IBAction func onTappedSave(sender: AnyObject) {
         let alert = UIAlertController(title: "What is this item?", message: nil, preferredStyle: .Alert)
-        alert.view.addSubview(picker)
+  //      alert.view.addSubview(picker)
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
         alert.addAction(cancelAction)
         let addAction = UIAlertAction(title: "Save", style: .Default) { (action) -> Void in
