@@ -39,7 +39,7 @@ class outfitViewController: UIViewController, UITableViewDataSource, UITableView
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("myCell", forIndexPath: indexPath)
-       // cell.textLabel?.text = outfit[indexPath.row].name
+        cell.textLabel?.text = outfit[indexPath.row].outfitName
         return cell
     }
     

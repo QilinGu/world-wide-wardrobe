@@ -34,6 +34,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate {
     var outfitPantsNumber = 0
     var outfitShoesNumber = 0
     
+    var outfitName = ""
     
     
     func checkArrowAlpha()
@@ -96,6 +97,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate {
             shoesImageView.image = shoesImagesArray[outfitShoesNumber]
         }
         checkArrowAlpha()
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "outfitSegue"
+        {
+            let dvc = segue.destinationViewController as! outfitViewController
+            dvc.outfit = self.outfitsArray
+        }
     }
     
     override func viewDidLoad()
@@ -192,6 +201,26 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate {
     }
    
     
+    @IBAction func onSaveOutfitTapped(sender: AnyObject) {
+        let alert = UIAlertController(title: "Save Outfit", message: nil, preferredStyle: .Alert)
+        alert.addTextFieldWithConfigurationHandler { (nameTextField) -> Void in
+            nameTextField.placeholder = "Name Your Outfit"
+        }
+        let finishAction = UIAlertAction(title: "Finish", style: .Default) { (action) -> Void in
+            let nameTextField = alert.textFields![0] as UITextField
+
+            self.outfitName = nameTextField.text!
+            self.outfitsArray.append(outfitObject(topImage: self.shirtImagesArray[self.outfitShirtNumber], bottomImage: self.pantsImagesArray[self.outfitPantsNumber], shoesImage: self.shoesImagesArray[self.outfitShoesNumber],outfitName: self.outfitName))
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Default, handler: nil)
+        alert.addAction(finishAction)
+        alert.addAction(cancelAction)
+        
+        self.presentViewController(alert, animated: true, completion: nil)
+        
+
+    }
   
 
 }
