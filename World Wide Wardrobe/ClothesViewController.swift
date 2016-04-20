@@ -83,12 +83,13 @@ class ClothesViewController: UIViewController, UITableViewDataSource, SFSafariVi
         alert.addTextFieldWithConfigurationHandler { (textField) -> Void in
             textField.placeholder = "Add Item"
             textField.text = self.clothes.name
+            self.clothes.clothingItemImage = self.clothingItemImageView.image!
         }
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
         alert.addAction(cancelAction)
+        
         let addAction = UIAlertAction(title: "Save", style: .Default) { (action) -> Void in
-            //clothes.clothingItemImage = clothingItemImageView.image!
         }
         
         alert.addAction(addAction)

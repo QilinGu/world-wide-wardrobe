@@ -64,8 +64,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Mh-ue-fX1">
-                                <rect key="frame" x="212" y="111" width="94" height="30"/>
-                                <state key="normal" title="Go to Clothes"/>
+                                <rect key="frame" x="195" y="111" width="128" height="30"/>
+                                <state key="normal" title="Add Item to Closet"/>
                                 <connections>
                                     <segue destination="b3s-Gs-tfS" kind="show" identifier="clothesSegue" id="O12-uJ-4jo"/>
                                 </connections>
