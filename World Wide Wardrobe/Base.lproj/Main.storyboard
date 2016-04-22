@@ -199,10 +199,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7p-vS-Pai">
-                                <rect key="frame" x="341" y="313" width="46" height="30"/>
-                                <state key="normal" title="Save"/>
+                                <rect key="frame" x="341" y="313" width="77" height="30"/>
+                                <state key="normal" title="Item Type?"/>
                                 <connections>
-                                    <action selector="onTappedSave:" destination="b3s-Gs-tfS" eventType="touchUpInside" id="Opw-AK-Dsv"/>
+                                    <action selector="nameButton:" destination="b3s-Gs-tfS" eventType="touchUpInside" id="JKg-6G-vaO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -211,16 +211,14 @@
                             <constraint firstItem="9VS-Oy-8t7" firstAttribute="centerX" secondItem="Pud-d4-4Fw" secondAttribute="centerX" id="Mmd-YQ-kBK"/>
                         </constraints>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem id="fys-Ad-SDJ">
-                            <connections>
-                                <action selector="onTappedSave:" destination="b3s-Gs-tfS" id="43W-dK-CMf"/>
-                            </connections>
-                        </barButtonItem>
-                    </toolbarItems>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="LsA-WW-yDZ">
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="2Jf-Pg-yUm"/>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="clothingItemImageView" destination="9VS-Oy-8t7" id="KR6-w4-XSZ"/>
+                        <outlet property="saveButton" destination="2Jf-Pg-yUm" id="0gi-ff-xj3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hma-g5-sqK" userLabel="First Responder" sceneMemberID="firstResponder"/>

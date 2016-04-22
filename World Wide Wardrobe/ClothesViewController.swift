@@ -14,18 +14,19 @@ class ClothesViewController: UIViewController, UITableViewDataSource, SFSafariVi
     let imagePicker = UIImagePickerController()
     var clothes = clothingItem(clothingItemImage: UIImage(named: "placeholder")!)
     var clothesArray : [clothingItem] = []
+    var outfitsArray : [outfitObject] = []
+    var clothesImages : outfitObject?
+    
     var pickerFrame: CGRect = CGRectMake(17, 52, 270, 100)
     
     @IBOutlet weak var clothingItemImageView: UIImageView!
+    @IBOutlet weak var saveButton: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         clothingItemImageView.image = clothes.clothingItemImage
         imagePicker.delegate = self
         
-       clothesArray.append(clothingItem(clothingType: "Top"))
-        clothesArray.append(clothingItem(clothingType: "Bottom"))
-        clothesArray.append(clothingItem(clothingType: "Shoes"))
             }
     
     
@@ -64,6 +65,20 @@ class ClothesViewController: UIViewController, UITableViewDataSource, SFSafariVi
        clothesArray.insert(clothes, atIndex: destinationIndexPath.row)
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if saveButton === sender {
+            let clothesImages = clothingItemImageView.image
+        }
+        clothesImages = outfitObject(clothingType: "") 
+    }
+    
+    //override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    //    if (segue.identifier == "LocationSegue") {
+     //       var svc = segue.destinationViewController
+      //          as! Map;
+      //      svc.toPass = locationTextField.text
+      //  }
+    
     //allows user to go to library
     @IBAction func onTappedLibraryButton(sender: AnyObject) {
         imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
@@ -78,7 +93,11 @@ class ClothesViewController: UIViewController, UITableViewDataSource, SFSafariVi
         }
     }
     
-    @IBAction func onTappedSave(sender: AnyObject) {
+
+    
+    @IBAction func nameButton(sender: AnyObject) {
+        self.outfitsArray.append(outfitObject.init(self.clothes.clothingItemImage = self.clothingItemImageView.image))
+
         let alert = UIAlertController(title: "What is this item?", message: nil, preferredStyle: .Alert)
         alert.addTextFieldWithConfigurationHandler { (textField) -> Void in
             textField.placeholder = "Add Item"
@@ -90,11 +109,10 @@ class ClothesViewController: UIViewController, UITableViewDataSource, SFSafariVi
         alert.addAction(cancelAction)
         
         let addAction = UIAlertAction(title: "Save", style: .Default) { (action) -> Void in
-        }
+            
+        } 
         
         alert.addAction(addAction)
         self.presentViewController(alert, animated: true, completion: nil)
-        
     }
-    
 }

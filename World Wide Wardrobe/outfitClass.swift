@@ -14,6 +14,7 @@ class outfitObject: NSObject {
     var bottomImage = UIImage(named: "placeholder")
     var shoesImage = UIImage(named: "placeholder")
     var outfitName = ""
+    var clothingType = "" 
     
     convenience init(topImage: UIImage, bottomImage: UIImage, shoesImage: UIImage,outfitName: String)
     {
@@ -22,6 +23,12 @@ class outfitObject: NSObject {
         self.bottomImage = bottomImage
         self.shoesImage = shoesImage
         self.outfitName = outfitName
+    }
+    
+    convenience init(clothingType: String)
+    {
+        self.init()
+        self.clothingType = clothingType
     }
     
 }
