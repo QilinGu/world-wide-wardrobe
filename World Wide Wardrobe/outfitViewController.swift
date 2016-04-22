@@ -60,7 +60,7 @@ class outfitViewController: UIViewController, UITableViewDataSource, UITableView
         
         let addAction = UIAlertAction(title: "Add", style: .Default) { (action) -> Void in
             let outfitTextField = alert.textFields![0] as UITextField
-            //self.outfit.append(outfitObject(name: outfitTextField.text!))
+            self.outfit.append(outfitObject(topImage: UIImage(named: "placeholder")!, bottomImage: UIImage(named: "placeholder4")!, shoesImage: UIImage(named: "placeholder7")!, outfitName: outfitTextField.text!))
             self.tableView.reloadData()}
         alert.addAction(addAction)
         self.presentViewController(alert, animated: true, completion: nil)
