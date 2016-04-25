@@ -72,13 +72,6 @@ class ClothesViewController: UIViewController, UITableViewDataSource, SFSafariVi
         clothesImages = outfitObject(clothingType: "") 
     }
     
-    //override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    //    if (segue.identifier == "LocationSegue") {
-     //       var svc = segue.destinationViewController
-      //          as! Map;
-      //      svc.toPass = locationTextField.text
-      //  }
-    
     //allows user to go to library
     @IBAction func onTappedLibraryButton(sender: AnyObject) {
         imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
@@ -94,7 +87,7 @@ class ClothesViewController: UIViewController, UITableViewDataSource, SFSafariVi
     }
     
 
-    
+    //define what type of clothing item the image is
     @IBAction func nameButton(sender: AnyObject) {
         self.outfitsArray.append(outfitObject.init(self.clothes.clothingItemImage = self.clothingItemImageView.image))
 
@@ -115,4 +108,12 @@ class ClothesViewController: UIViewController, UITableViewDataSource, SFSafariVi
         alert.addAction(addAction)
         self.presentViewController(alert, animated: true, completion: nil)
     }
+    
+    @IBAction func unwindToClothesArray(sender: UIStoryboardSegue) {
+        if let sourceViewController = sender.sourceViewController as? ClothesViewController, clothesImages = sourceViewController.clothesImages {
+            let newIndexPath = NSIndexPath(forRow: clothesArray.count, inSection: 0)
+            outfitsArray.append(clothesImages)
+        }
+    }
+    
 }

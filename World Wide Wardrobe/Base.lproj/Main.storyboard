@@ -213,7 +213,11 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="LsA-WW-yDZ">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="2Jf-Pg-yUm"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="2Jf-Pg-yUm">
+                            <connections>
+                                <segue destination="RqK-cd-AdW" kind="unwind" unwindAction="unwindToClothesArray:" id="tB2-2i-oKh"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -222,6 +226,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hma-g5-sqK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="RqK-cd-AdW" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1674" y="988"/>
         </scene>

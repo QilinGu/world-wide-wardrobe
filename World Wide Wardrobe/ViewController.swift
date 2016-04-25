@@ -218,14 +218,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate {
         alert.addAction(cancelAction)
         
         self.presentViewController(alert, animated: true, completion: nil)
-        
-      @IBAction func unwindToClothesArray(sender: UIStoryboardSegue) {
-          if let sourceViewController = sender.sourceViewController as? ClothesViewController, clothesImages = sourceViewController.clothesImages {
-              let newIndexPath = NSIndexPath(forRow: clothesArray.count, inSection: 0)
-           outfitsArray.append(clothesImages)
-            }
-            
-        }
 
     }
   
