@@ -110,7 +110,7 @@ class ClothesViewController: UIViewController, UITableViewDataSource, SFSafariVi
     }
     
     @IBAction func unwindToClothesArray(sender: UIStoryboardSegue) {
-        if let sourceViewController = sender.sourceViewController as? ClothesViewController, clothesImages = sourceViewController.clothesImages {
+        if let sourceViewController = sender.sourceViewController as? ViewController, clothesImages = sourceViewController.clothesImages {
             let newIndexPath = NSIndexPath(forRow: clothesArray.count, inSection: 0)
             outfitsArray.append(clothesImages)
         }
