@@ -26,7 +26,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate {
     var clothesArray : [clothingItem] = []
     var outfitsArray : [outfitObject] = []
     var clothesImages : outfitObject?
-    var clothes = clothingItem(clothingItemImage: UIImage(named: "")!)
     
     var shirtImagesArray : [UIImage] = [UIImage(named: "placeholder")!,UIImage(named: "placeholder2")!,UIImage(named: "placeholder3")!]
     var pantsImagesArray : [UIImage] = [UIImage(named: "placeholder4")!,UIImage(named: "placeholder5")!,UIImage(named: "placeholder6")!]
@@ -114,13 +113,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate {
         super.viewDidLoad()
         updateOutfitImages()
         checkArrowAlpha()
-        addClothesToArrays() 
-    }
-    ///////////
-    func addClothesToArrays() {
-        shirtImagesArray.append(clothes.clothingItemImage!)
-        pantsImagesArray.append(clothes.clothingItemImage!)
-        shoesImagesArray.append(clothes.clothingItemImage!)
+       
     }
     
     //On Arrow Tapped Actions

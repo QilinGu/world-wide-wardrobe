@@ -65,12 +65,6 @@ class ClothesViewController: UIViewController, UITableViewDataSource, SFSafariVi
        clothesArray.insert(clothes, atIndex: destinationIndexPath.row)
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if saveButton === sender {
-            let clothesImages = clothingItemImageView.image
-        }
-        clothesImages = outfitObject(clothingType: "") 
-    }
     
     //allows user to go to library
     @IBAction func onTappedLibraryButton(sender: AnyObject) {
@@ -111,7 +105,6 @@ class ClothesViewController: UIViewController, UITableViewDataSource, SFSafariVi
     
     @IBAction func unwindToClothesArray(sender: UIStoryboardSegue) {
         if let sourceViewController = sender.sourceViewController as? ViewController, clothesImages = sourceViewController.clothesImages {
-            let newIndexPath = NSIndexPath(forRow: clothesArray.count, inSection: 0)
             outfitsArray.append(clothesImages)
         }
     }
