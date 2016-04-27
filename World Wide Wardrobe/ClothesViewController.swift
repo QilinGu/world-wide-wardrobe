@@ -83,23 +83,37 @@ class ClothesViewController: UIViewController, UITableViewDataSource, SFSafariVi
 
     //define what type of clothing item the image is
     @IBAction func nameButton(sender: AnyObject) {
-        self.outfitsArray.append(outfitObject.init(self.clothes.clothingItemImage = self.clothingItemImageView.image))
-
-        let alert = UIAlertController(title: "What is this item?", message: nil, preferredStyle: .Alert)
-        alert.addTextFieldWithConfigurationHandler { (textField) -> Void in
-            textField.placeholder = "Add Item"
-            textField.text = self.clothes.name
-            self.clothes.clothingItemImage = self.clothingItemImageView.image!
+        let alert = UIAlertController(title: "Add Clothes", message: nil, preferredStyle: .Alert)
+        alert.addTextFieldWithConfigurationHandler { (nameTextField) -> Void in
+            nameTextField.placeholder = "Name"
         }
-        
-        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Default, handler: nil)
         alert.addAction(cancelAction)
-        
-        let addAction = UIAlertAction(title: "Save", style: .Default) { (action) -> Void in
+        let addTopAction = UIAlertAction(title: "Add Top", style: .Default) { (action) -> Void in
+            let nameTextField = alert.textFields![0] as UITextField
+            self.clothesArray.append(clothingItem(name: nameTextField.text!,image: UIImage(named: "placeholder")!))
+          //  self.shirtImagesArray.append(self.clothesArray[self.clothesArray.count - 1].image!)
+         //   self.checkArrowAlpha()
             
-        } 
+        }
+        alert.addAction(addTopAction)
+        let addBottomAction = UIAlertAction(title: "Add Bottom", style: .Default) { (action) -> Void in
+            let nameTextField = alert.textFields![0] as UITextField
+            self.clothesArray.append(clothingItem(name: nameTextField.text!,image: UIImage(named: "placeholder4")!))
+         //   self.shirtImagesArray.append(self.clothesArray[self.clothesArray.count - 1].image!)
+         //   self.checkArrowAlpha()
+        }
+        alert.addAction(addBottomAction)
         
-        alert.addAction(addAction)
+        let addShoeAction = UIAlertAction(title: "Add Shoes", style: .Default) { (action) -> Void in
+            let nameTextField = alert.textFields![0] as UITextField
+            self.clothesArray.append(clothingItem(name: nameTextField.text!,image: UIImage(named: "placeholder7")!))
+         //   self.shirtImagesArray.append(self.clothesArray[self.clothesArray.count - 1].image!)
+         //   self.checkArrowAlpha()
+            
+        }
+        alert.addAction(addShoeAction)
+        
         self.presentViewController(alert, animated: true, completion: nil)
     }
     
