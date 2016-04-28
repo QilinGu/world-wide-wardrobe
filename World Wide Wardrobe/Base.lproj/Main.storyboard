@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
-        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
     </dependencies>
     <scenes>
         <!--Modal Instructions View Controller-->
@@ -222,7 +221,7 @@
                                                     <rect key="frame" x="15" y="0.0" width="570" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -260,7 +259,23 @@
                     <view key="view" contentMode="scaleToFill" id="Jil-aq-yXU">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="emf-Th-vtG">
+                                <rect key="frame" x="180" y="83" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ze-35-1nx">
+                                <rect key="frame" x="180" y="236" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o9m-Ss-Ief">
+                                <rect key="frame" x="180" y="386" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="o9m-Ss-Ief" firstAttribute="centerX" secondItem="Jil-aq-yXU" secondAttribute="centerX" id="5Bw-Yf-21o"/>
+                            <constraint firstItem="7ze-35-1nx" firstAttribute="centerX" secondItem="Jil-aq-yXU" secondAttribute="centerX" id="Bch-ft-EBT"/>
+                            <constraint firstItem="emf-Th-vtG" firstAttribute="centerX" secondItem="Jil-aq-yXU" secondAttribute="centerX" id="kR2-NO-Yum"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0AQ-JK-Snz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -307,22 +322,14 @@
                         <barButtonItem id="Uw9-WS-gNt"/>
                     </toolbarItems>
                     <navigationItem key="navigationItem" id="aOx-pX-xZC">
-                        <rightBarButtonItems>
-                            <barButtonItem systemItem="add" id="4zs-Uq-RFb">
-                                <connections>
-                                    <action selector="onAddButtonTapped:" destination="AqT-xs-h5q" id="fwn-ds-ds6"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem systemItem="edit" id="oWU-cL-7ON">
-                                <connections>
-                                    <action selector="onEditButtonTapped:" destination="AqT-xs-h5q" id="7tD-4F-bir"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="oWU-cL-7ON">
+                            <connections>
+                                <action selector="onEditButtonTapped:" destination="AqT-xs-h5q" id="7tD-4F-bir"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="addButton" destination="4zs-Uq-RFb" id="Rv7-sG-cMw"/>
                         <outlet property="editButton" destination="oWU-cL-7ON" id="Zvi-2M-2my"/>
                         <outlet property="tableView" destination="PGJ-gc-1ie" id="Cfd-fj-qBN"/>
                     </connections>
