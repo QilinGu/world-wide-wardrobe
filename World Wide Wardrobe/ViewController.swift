@@ -198,9 +198,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let addTopAction = UIAlertAction(title: "Add Top", style: .Default) { (action) -> Void in
             let nameTextField = alert.textFields![0] as UITextField
             self.accessLibrary()
-           
-            //self.clothesArray.append(clothingItem(name: nameTextField.text!,image: UIImage(named: "placeholder")!))
-            //self.shirtImagesArray.append(self.clothesArray[self.clothesArray.count - 1].image!)
             self.checkArrowAlpha()
             
         }
@@ -208,8 +205,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let addBottomAction = UIAlertAction(title: "Add Bottom", style: .Default) { (action) -> Void in
             let nameTextField = alert.textFields![0] as UITextField
             self.accessLibrary()
-            //self.clothesArray.append(clothingItem(name: nameTextField.text!,image: UIImage(named: "placeholder4")!))
-           // self.shirtImagesArray.append(self.clothesArray[self.clothesArray.count - 1].image!)
             self.checkArrowAlpha()
             
         }

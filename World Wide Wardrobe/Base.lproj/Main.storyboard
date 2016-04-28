@@ -247,9 +247,6 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="LsA-WW-yDZ"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                    <connections>
-                        <outlet property="clothesTableView" destination="WK5-xY-gaV" id="u85-OS-Uq7"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hma-g5-sqK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -338,6 +335,7 @@
     <resources>
         <image name="arrowLeft" width="600" height="452"/>
         <image name="arrowRight" width="600" height="452"/>
+        <image name="placeholder" width="128" height="128"/>
         <image name="wwwicon" width="127" height="127"/>
     </resources>
 </document>
