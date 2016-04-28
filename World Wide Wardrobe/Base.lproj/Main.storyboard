@@ -238,7 +238,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="LsA-WW-yDZ"/>
+                    <navigationItem key="navigationItem" id="LsA-WW-yDZ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="mkq-ot-gIY">
+                            <connections>
+                                <action selector="onAddButtonTapped:" destination="b3s-Gs-tfS" id="y6G-WU-6Rl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="clothesTableView" destination="WK5-xY-gaV" id="u85-OS-Uq7"/>
