@@ -10,6 +10,8 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    var outfit: outfitObject!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

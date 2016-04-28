@@ -49,6 +49,12 @@ class outfitViewController: UIViewController, UITableViewDataSource, UITableView
         }
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let dvc = segue.destinationViewController as! DetailViewController
+        let index = tableView.indexPathForSelectedRow?.row
+        dvc.outfit = outfit[index!]
+    }
+    
     @IBAction func onAddButtonTapped(sender: UIBarButtonItem) {
         let alert = UIAlertController(title: "Add Outfit", message: nil, preferredStyle: .Alert)
         alert.addTextFieldWithConfigurationHandler { (textField) -> Void in
