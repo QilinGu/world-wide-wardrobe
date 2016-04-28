@@ -273,7 +273,7 @@
                                 <rect key="frame" x="180" y="236" width="240" height="128"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o9m-Ss-Ief">
-                                <rect key="frame" x="180" y="386" width="240" height="128"/>
+                                <rect key="frame" x="180" y="413" width="240" height="128"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -283,6 +283,11 @@
                             <constraint firstItem="emf-Th-vtG" firstAttribute="centerX" secondItem="Jil-aq-yXU" secondAttribute="centerX" id="kR2-NO-Yum"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bottomImage" destination="7ze-35-1nx" id="dd8-Nk-rn7"/>
+                        <outlet property="shoesImage" destination="o9m-Ss-Ief" id="yKc-Pt-3Zi"/>
+                        <outlet property="topImage" destination="emf-Th-vtG" id="1QL-I0-M9j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0AQ-JK-Snz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

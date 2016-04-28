@@ -12,6 +12,11 @@ class DetailViewController: UIViewController {
 
     var outfit: outfitObject!
     
+    @IBOutlet var topImage: UIImageView!
+    @IBOutlet var bottomImage: UIImageView!
+    @IBOutlet var shoesImage: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
