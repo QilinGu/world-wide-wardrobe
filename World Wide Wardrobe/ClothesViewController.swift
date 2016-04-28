@@ -26,6 +26,7 @@ class ClothesViewController: UIViewController, UITableViewDataSource, UITableVie
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = clothesTableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath)
         cell.textLabel?.text = clothesArray[indexPath.row].name
+        cell.imageView?.image = clothesArray[indexPath.row].image
         return cell
     }
     
@@ -34,6 +35,10 @@ class ClothesViewController: UIViewController, UITableViewDataSource, UITableVie
         clothesArray.removeAtIndex(indexPath.row)
             tableView.reloadData()
         }
+    }
+
+    func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+      return true
     }
     
     func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
