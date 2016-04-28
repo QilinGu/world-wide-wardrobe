@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var topsImageView: UIImageView!
     @IBOutlet weak var pantsImageView: UIImageView!
@@ -100,6 +100,19 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate {
         checkArrowAlpha()
     }
     
+    
+    func accessLibrary() {
+        self.imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
+        presentViewController(imagePicker, animated: true, completion: nil)
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        imagePicker.dismissViewControllerAnimated(true) { () -> Void in
+            let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+            self.topsImageView.image = selectedImage
+        }
+    }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "outfitSegue"
         {
@@ -111,6 +124,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate {
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        imagePicker.delegate = self
         updateOutfitImages()
         checkArrowAlpha()
        
@@ -164,7 +178,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate {
             updateOutfitImages()
         }
     }
-    //////
     
     @IBAction func onAddButtonTapped(sender: AnyObject) {
         
@@ -176,24 +189,29 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate {
         alert.addAction(cancelAction)
         let addTopAction = UIAlertAction(title: "Add Top", style: .Default) { (action) -> Void in
             let nameTextField = alert.textFields![0] as UITextField
-            self.clothesArray.append(clothingItem(name: nameTextField.text!,image: UIImage(named: "placeholder")!))
-            self.shirtImagesArray.append(self.clothesArray[self.clothesArray.count - 1].image!)
+            self.accessLibrary()
+           
+            //self.clothesArray.append(clothingItem(name: nameTextField.text!,image: UIImage(named: "placeholder")!))
+            //self.shirtImagesArray.append(self.clothesArray[self.clothesArray.count - 1].image!)
             self.checkArrowAlpha()
             
         }
         alert.addAction(addTopAction)
         let addBottomAction = UIAlertAction(title: "Add Bottom", style: .Default) { (action) -> Void in
             let nameTextField = alert.textFields![0] as UITextField
-            self.clothesArray.append(clothingItem(name: nameTextField.text!,image: UIImage(named: "placeholder4")!))
-            self.shirtImagesArray.append(self.clothesArray[self.clothesArray.count - 1].image!)
+            self.accessLibrary()
+            //self.clothesArray.append(clothingItem(name: nameTextField.text!,image: UIImage(named: "placeholder4")!))
+           // self.shirtImagesArray.append(self.clothesArray[self.clothesArray.count - 1].image!)
             self.checkArrowAlpha()
+            
         }
         alert.addAction(addBottomAction)
 
         let addShoeAction = UIAlertAction(title: "Add Shoes", style: .Default) { (action) -> Void in
             let nameTextField = alert.textFields![0] as UITextField
-            self.clothesArray.append(clothingItem(name: nameTextField.text!,image: UIImage(named: "placeholder7")!))
-            self.shirtImagesArray.append(self.clothesArray[self.clothesArray.count - 1].image!)
+            self.accessLibrary()
+           // self.clothesArray.append(clothingItem(name: nameTextField.text!,image: UIImage(named: "placeholder7")!))
+            //self.shirtImagesArray.append(self.clothesArray[self.clothesArray.count - 1].image!)
             self.checkArrowAlpha()
             
         }
