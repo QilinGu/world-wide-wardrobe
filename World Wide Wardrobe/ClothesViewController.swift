@@ -9,42 +9,23 @@
 import UIKit
 import SafariServices
 
-class ClothesViewController: UIViewController, UITableViewDataSource, SFSafariViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ClothesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
-    let imagePicker = UIImagePickerController()
     var clothes = clothingItem(clothingItemImage: UIImage(named: "placeholder")!)
     var clothesArray : [clothingItem] = []
     var outfitsArray : [outfitObject] = []
     var clothesImages : outfitObject?
-    
-    var pickerFrame: CGRect = CGRectMake(17, 52, 270, 100)
-    
-    @IBOutlet weak var clothingItemImageView: UIImageView!
-    @IBOutlet weak var saveButton: UIBarButtonItem!
+
+    @IBOutlet weak var clothesTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        clothingItemImageView.image = clothes.clothingItemImage
-        imagePicker.delegate = self
         
             }
     
-    
-    //puts pictures of clothes into clothingItemImageView
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
-        imagePicker.dismissViewControllerAnimated(true) { () -> Void in
-            let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
-            self.clothingItemImageView.image = selectedImage
-        }
-    }
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return clothesArray.count
-    }
-    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("My Cell", forIndexPath: indexPath)
-       cell.textLabel?.text = clothesArray[indexPath.row].clothingType
+        let cell = clothesTableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath)
+        cell.textLabel?.text = clothesArray[indexPath.row].name
         return cell
     }
     

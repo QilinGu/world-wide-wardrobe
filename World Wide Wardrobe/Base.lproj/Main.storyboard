@@ -100,7 +100,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Mh-ue-fX1">
-                                <rect key="frame" x="195" y="111" width="128" height="30"/>
+                                <rect key="frame" x="66" y="111" width="128" height="30"/>
                                 <state key="normal" title="Add Item to Closet"/>
                                 <connections>
                                     <segue destination="b3s-Gs-tfS" kind="show" identifier="clothesSegue" id="O12-uJ-4jo"/>
@@ -120,13 +120,6 @@
                                 <state key="normal" title="Save Outfit"/>
                                 <connections>
                                     <action selector="onSaveOutfitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d4c-jU-6x3"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zof-ZO-Iwz">
-                                <rect key="frame" x="314" y="191" width="51" height="44"/>
-                                <state key="normal" title="Button" image="arrowRight"/>
-                                <connections>
-                                    <action selector="increaseShirtArrow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v8e-UN-mln"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQu-nh-6eL">
@@ -162,6 +155,13 @@
                                 <state key="normal" title="Button" image="arrowLeft"/>
                                 <connections>
                                     <action selector="decreaseShirtArrow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e4X-Mq-slT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zof-ZO-Iwz">
+                                <rect key="frame" x="314" y="191" width="51" height="44"/>
+                                <state key="normal" title="Button" image="arrowRight"/>
+                                <connections>
+                                    <action selector="increaseShirtArrow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v8e-UN-mln"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -243,26 +243,15 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="9VS-Oy-8t7" firstAttribute="centerX" secondItem="Pud-d4-4Fw" secondAttribute="centerX" id="Mmd-YQ-kBK"/>
-                        </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="LsA-WW-yDZ">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="2Jf-Pg-yUm">
-                            <connections>
-                                <segue destination="RqK-cd-AdW" kind="unwind" unwindAction="unwindToClothesArray:" id="tB2-2i-oKh"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="LsA-WW-yDZ"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="clothingItemImageView" destination="9VS-Oy-8t7" id="KR6-w4-XSZ"/>
-                        <outlet property="saveButton" destination="2Jf-Pg-yUm" id="0gi-ff-xj3"/>
+                        <outlet property="clothesTableView" destination="WK5-xY-gaV" id="u85-OS-Uq7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hma-g5-sqK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="RqK-cd-AdW" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1674" y="988"/>
         </scene>
@@ -349,7 +338,6 @@
     <resources>
         <image name="arrowLeft" width="600" height="452"/>
         <image name="arrowRight" width="600" height="452"/>
-        <image name="placeholder" width="128" height="128"/>
         <image name="wwwicon" width="127" height="127"/>
     </resources>
 </document>
