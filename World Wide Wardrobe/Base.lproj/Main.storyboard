@@ -100,7 +100,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Mh-ue-fX1">
-                                <rect key="frame" x="195" y="111" width="128" height="30"/>
+                                <rect key="frame" x="66" y="111" width="128" height="30"/>
                                 <state key="normal" title="Add Item to Closet"/>
                                 <connections>
                                     <segue destination="b3s-Gs-tfS" kind="show" identifier="clothesSegue" id="O12-uJ-4jo"/>
@@ -120,13 +120,6 @@
                                 <state key="normal" title="Save Outfit"/>
                                 <connections>
                                     <action selector="onSaveOutfitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d4c-jU-6x3"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zof-ZO-Iwz">
-                                <rect key="frame" x="314" y="191" width="51" height="44"/>
-                                <state key="normal" title="Button" image="arrowRight"/>
-                                <connections>
-                                    <action selector="increaseShirtArrow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v8e-UN-mln"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQu-nh-6eL">
@@ -162,6 +155,13 @@
                                 <state key="normal" title="Button" image="arrowLeft"/>
                                 <connections>
                                     <action selector="decreaseShirtArrow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e4X-Mq-slT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zof-ZO-Iwz">
+                                <rect key="frame" x="314" y="191" width="51" height="44"/>
+                                <state key="normal" title="Button" image="arrowRight"/>
+                                <connections>
+                                    <action selector="increaseShirtArrow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v8e-UN-mln"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -207,62 +207,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="9VS-Oy-8t7">
-                                <rect key="frame" x="73" y="153" width="300" height="300"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="2Je-zK-v48"/>
-                                    <constraint firstAttribute="width" constant="300" id="zgu-Uf-LLi"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9l-xO-vrU">
-                                <rect key="frame" x="290" y="205" width="97" height="30"/>
-                                <state key="normal" title="Photo Library"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WK5-xY-gaV">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyCell" textLabel="m2o-ZF-S1v" style="IBUITableViewCellStyleDefault" id="h1q-C2-vLL">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h1q-C2-vLL" id="4qJ-j2-9uQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="m2o-ZF-S1v">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration" identifier="MyCell"/>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
-                                    <action selector="onTappedLibraryButton:" destination="b3s-Gs-tfS" eventType="touchUpInside" id="XwG-cv-Osx"/>
+                                    <outlet property="dataSource" destination="b3s-Gs-tfS" id="xbc-uc-vpo"/>
+                                    <outlet property="delegate" destination="b3s-Gs-tfS" id="gOX-nw-gUl"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2q-n1-gBc">
-                                <rect key="frame" x="304" y="266" width="69" height="30"/>
-                                <state key="normal" title="Camera"/>
-                                <connections>
-                                    <action selector="onTappedCameraButton:" destination="b3s-Gs-tfS" eventType="touchUpInside" id="BjZ-Sq-uF4"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add new clothing item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yd2-nL-b59">
-                                <rect key="frame" x="190" y="114" width="171" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7p-vS-Pai">
-                                <rect key="frame" x="341" y="313" width="77" height="30"/>
-                                <state key="normal" title="Item Type?"/>
-                                <connections>
-                                    <action selector="nameButton:" destination="b3s-Gs-tfS" eventType="touchUpInside" id="JKg-6G-vaO"/>
-                                </connections>
-                            </button>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="9VS-Oy-8t7" firstAttribute="centerX" secondItem="Pud-d4-4Fw" secondAttribute="centerX" id="Mmd-YQ-kBK"/>
-                        </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="LsA-WW-yDZ">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="2Jf-Pg-yUm">
-                            <connections>
-                                <segue destination="RqK-cd-AdW" kind="unwind" unwindAction="unwindToClothesArray:" id="tB2-2i-oKh"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="LsA-WW-yDZ"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="clothingItemImageView" destination="9VS-Oy-8t7" id="KR6-w4-XSZ"/>
-                        <outlet property="saveButton" destination="2Jf-Pg-yUm" id="0gi-ff-xj3"/>
+                        <outlet property="clothesTableView" destination="WK5-xY-gaV" id="u85-OS-Uq7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hma-g5-sqK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="RqK-cd-AdW" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1674" y="988"/>
         </scene>
@@ -370,7 +353,6 @@
     <resources>
         <image name="arrowLeft" width="600" height="452"/>
         <image name="arrowRight" width="600" height="452"/>
-        <image name="placeholder" width="128" height="128"/>
         <image name="wwwicon" width="127" height="127"/>
     </resources>
 </document>

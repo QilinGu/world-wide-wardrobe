@@ -23,7 +23,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate {
     
     let imagePicker = UIImagePickerController()
     
-    var clothesArray : [clothingItem] = []
+    var clothesArray : [clothingItem] = [clothingItem(name: "Placeholder Shirt 1", image: UIImage(named: "placeholder")!), clothingItem(name: "Placeholder Shirt 2", image: UIImage(named: "placeholder2")!), clothingItem(name: "Placeholder Shirt 3", image: UIImage(named: "placeholder3")!), clothingItem(name: "Placeholder Pants 1", image: UIImage(named: "placeholder4")!), clothingItem(name: "Placeholder Pants 2", image: UIImage(named: "placeholder5")!), clothingItem(name: "Placeholder Pants 3", image: UIImage(named: "placeholder6")!), clothingItem(name: "Placeholder Shoes 1", image: UIImage(named: "placeholder7")!), clothingItem(name: "Placeholder Shoes 2", image: UIImage(named: "placeholder8")!), clothingItem(name: "Placeholder Shoes 3", image: UIImage(named: "placeholder9")!)]
+    
+    
     var outfitsArray : [outfitObject] = []
     
     var shirtImagesArray : [UIImage] = [UIImage(named: "placeholder")!,UIImage(named: "placeholder2")!,UIImage(named: "placeholder3")!]
@@ -104,6 +106,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate {
         {
             let dvc = segue.destinationViewController as! outfitViewController
             dvc.outfit = self.outfitsArray
+        }
+        
+        if segue.identifier == "clothesSegue"
+        {
+            let dvc = segue.destinationViewController as! ClothesViewController
+            dvc.clothesArray = self.clothesArray
         }
     }
     
