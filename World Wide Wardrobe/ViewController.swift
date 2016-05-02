@@ -127,6 +127,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             let dvc = segue.destinationViewController as! ClothesViewController
             dvc.clothesArray = self.clothesArray
         }
+        
+        if segue.identifier == "toDetailViewSegue"
+        {
+            let dvc = segue.destinationViewController as! clothingItemDetailViewController
+            dvc.detailClothingItem = self.clothesArray.last!
+        }
     }
     
     override func viewDidLoad()
@@ -197,26 +203,30 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         alert.addAction(cancelAction)
         let addTopAction = UIAlertAction(title: "Add Top", style: .Default) { (action) -> Void in
             let nameTextField = alert.textFields![0] as UITextField
-            self.accessLibrary()
+           // self.accessLibrary()
+            self.clothesArray.append(clothingItem(name: nameTextField.text!,clothingItemType: 3,image: UIImage(named: "placeholder")!))
+            self.shirtImagesArray.append(self.clothesArray[self.clothesArray.count - 1].image!)
             self.checkArrowAlpha()
-            
+            self.performSegueWithIdentifier("toDetailViewSegue",sender: self)
         }
         alert.addAction(addTopAction)
         let addBottomAction = UIAlertAction(title: "Add Bottom", style: .Default) { (action) -> Void in
             let nameTextField = alert.textFields![0] as UITextField
-            self.accessLibrary()
+           //self.accessLibrary()
+            self.clothesArray.append(clothingItem(name: nameTextField.text!,clothingItemType: 2,image: UIImage(named: "placeholder4")!))
+            self.pantsImagesArray.append(self.clothesArray[self.clothesArray.count - 1].image!)
             self.checkArrowAlpha()
-            
+            self.performSegueWithIdentifier("toDetailViewSegue",sender: self)
         }
         alert.addAction(addBottomAction)
 
         let addShoeAction = UIAlertAction(title: "Add Shoes", style: .Default) { (action) -> Void in
             let nameTextField = alert.textFields![0] as UITextField
-            self.accessLibrary()
-           // self.clothesArray.append(clothingItem(name: nameTextField.text!,image: UIImage(named: "placeholder7")!))
-            //self.shirtImagesArray.append(self.clothesArray[self.clothesArray.count - 1].image!)
+           // self.accessLibrary()
+            self.clothesArray.append(clothingItem(name: nameTextField.text!,clothingItemType: 3,image: UIImage(named: "placeholder7")!))
+            self.shoesImagesArray.append(self.clothesArray[self.clothesArray.count - 1].image!)
             self.checkArrowAlpha()
-            
+            self.performSegueWithIdentifier("toDetailViewSegue",sender: self)
         }
         alert.addAction(addShoeAction)
 
