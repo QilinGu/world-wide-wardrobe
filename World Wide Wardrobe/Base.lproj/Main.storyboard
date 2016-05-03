@@ -252,7 +252,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hma-g5-sqK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1602" y="1368"/>
+            <point key="canvasLocation" x="1514" y="1098"/>
         </scene>
         <!--Clothing Item Detail View Controller-->
         <scene sceneID="U3x-gw-8Zs">

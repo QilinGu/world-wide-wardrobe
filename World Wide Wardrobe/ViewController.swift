@@ -253,8 +253,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         self.presentViewController(alert, animated: true, completion: nil)
 
     }
-    
-    override func prepareForSeeque
+
   
 
 }
