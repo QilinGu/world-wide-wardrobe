@@ -36,4 +36,18 @@ class clothingItem: NSObject {
         self.clothingType = clothingType 
     }
     
+    convenience init(name: String,clothingItemType: Int)
+    {
+        self.init()
+        self.name = name
+        self.clothingItemType = clothingItemType
+    }
+
+    convenience init(name: String,clothingItemType: Int,image: UIImage)
+    {
+        self.init()
+        self.name = name
+        self.clothingItemType = clothingItemType
+        self.image = image
+    }
 }

@@ -188,6 +188,7 @@
                         <outlet property="shoesImageView" destination="6Dj-ql-1Tf" id="YYA-ko-ZYN"/>
                         <outlet property="shoesIncreaseArrow" destination="7Ti-6x-t96" id="7gY-eU-TNk"/>
                         <outlet property="topsImageView" destination="Glt-C9-Bg2" id="6gA-Ff-jDx"/>
+                        <segue destination="mRu-PR-B9g" kind="show" identifier="toDetailViewSegue" id="BbS-OF-mTA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -227,6 +228,9 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <accessibility key="accessibilityConfiguration" identifier="MyCell"/>
+                                        <connections>
+                                            <segue destination="mRu-PR-B9g" kind="show" id="kYA-Uu-be1"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -238,7 +242,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="LsA-WW-yDZ"/>
+                    <navigationItem key="navigationItem" id="LsA-WW-yDZ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="FQZ-12-5jF"/>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="2za-bk-y9A" id="fV1-p4-v8r"/>
@@ -246,7 +252,66 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hma-g5-sqK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1674" y="988"/>
+            <point key="canvasLocation" x="1602" y="1368"/>
+        </scene>
+        <!--Clothing Item Detail View Controller-->
+        <scene sceneID="U3x-gw-8Zs">
+            <objects>
+                <viewController id="mRu-PR-B9g" customClass="clothingItemDetailViewController" customModule="World_Wide_Wardrobe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dxn-i0-FGa"/>
+                        <viewControllerLayoutGuide type="bottom" id="7fH-s3-7BH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ykc-VO-EJk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DNp-zK-G05">
+                                <rect key="frame" x="7" y="72" width="256" height="256"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kdC-BO-bww">
+                                <rect key="frame" x="271" y="72" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ME5-Bi-Jgo">
+                                <rect key="frame" x="271" y="142" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXR-WA-qkv">
+                                <rect key="frame" x="7" y="331" width="94" height="30"/>
+                                <state key="normal" title="Image Library"/>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jzu-fS-2de">
+                                <rect key="frame" x="271" y="110" width="158" height="29"/>
+                                <segments>
+                                    <segment title="Top"/>
+                                    <segment title="Pants"/>
+                                    <segment title="Shoes"/>
+                                </segments>
+                            </segmentedControl>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Clothing Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MIm-a1-mWD">
+                                <rect key="frame" x="376" y="72" width="111" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKu-iD-rA7">
+                                <rect key="frame" x="209" y="331" width="54" height="30"/>
+                                <state key="normal" title="Camera"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="clothingCategoryTextBox" destination="MIm-a1-mWD" id="whv-Ax-gIW"/>
+                        <outlet property="detailImageView" destination="DNp-zK-G05" id="sTY-bY-EEo"/>
+                        <outlet property="detailSegmentedController" destination="jzu-fS-2de" id="229-v6-2IU"/>
+                        <outlet property="nameTextBox" destination="kdC-BO-bww" id="2ec-Ge-CiE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k0o-O4-1MO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2326" y="988"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="Kd9-s5-I8a">
@@ -367,4 +432,7 @@
         <image name="arrowRight" width="600" height="452"/>
         <image name="wwwicon" width="127" height="127"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="kYA-Uu-be1"/>
+    </inferredMetricsTieBreakers>
 </document>
