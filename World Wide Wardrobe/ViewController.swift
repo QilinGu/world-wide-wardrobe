@@ -6,6 +6,7 @@
 //  Copyright © 2016 $wag Productions. All rights reserved.
 //
 
+//import RealmSwift
 import UIKit
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -39,6 +40,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     var outfitName = ""
     
+    /*
+    //Clothes Class for Realm
+    class Clothing: Object {
+        dynamic var name = ""
+        dynamic var type = 1
+        dynamic var category = ""
+    }
+    */
     
     func checkArrowAlpha()
     {
@@ -226,6 +235,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             self.clothesArray.append(clothingItem(name: nameTextField.text!,clothingItemType: 3,image: UIImage(named: "placeholder7")!))
             self.shoesImagesArray.append(self.clothesArray[self.clothesArray.count - 1].image!)
             self.checkArrowAlpha()
+            let cloth = self.clothesArray.last!
+            //try! realm.write {
+            //    realm.add(cloth)
+            //}
+
             self.performSegueWithIdentifier("toDetailViewSegue",sender: self)
         }
         alert.addAction(addShoeAction)
