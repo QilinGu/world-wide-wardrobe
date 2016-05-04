@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		320A28C51CB81F7200479901 /* outfitClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320A28C41CB81F7200479901 /* outfitClass.swift */; };
-		3216E2AE1CD911F6006591FD /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3216E2AC1CD911F6006591FD /* Realm.framework */; };
-		3216E2AF1CD911F6006591FD /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3216E2AC1CD911F6006591FD /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3216E2B01CD911F6006591FD /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3216E2AD1CD911F6006591FD /* RealmSwift.framework */; };
-		3216E2B11CD911F6006591FD /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3216E2AD1CD911F6006591FD /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		323484251CC158B2005444E2 /* ModalInstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323484241CC158B2005444E2 /* ModalInstructionsViewController.swift */; };
 		32890BE01CB6C9A0008A97FE /* ClothesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32890BDF1CB6C9A0008A97FE /* ClothesViewController.swift */; };
 		32890BE21CB6C9BF008A97FE /* outfitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32890BE11CB6C9BF008A97FE /* outfitViewController.swift */; };
@@ -50,8 +46,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				3216E2B11CD911F6006591FD /* RealmSwift.framework in Embed Frameworks */,
-				3216E2AF1CD911F6006591FD /* Realm.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,8 +54,6 @@
 
 /* Begin PBXFileReference section */
 		320A28C41CB81F7200479901 /* outfitClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = outfitClass.swift; sourceTree = "<group>"; };
-		3216E2AC1CD911F6006591FD /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
-		3216E2AD1CD911F6006591FD /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		323484241CC158B2005444E2 /* ModalInstructionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalInstructionsViewController.swift; sourceTree = "<group>"; };
 		32890BDF1CB6C9A0008A97FE /* ClothesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothesViewController.swift; sourceTree = "<group>"; };
 		32890BE11CB6C9BF008A97FE /* outfitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = outfitViewController.swift; sourceTree = "<group>"; };
@@ -87,8 +79,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3216E2B01CD911F6006591FD /* RealmSwift.framework in Frameworks */,
-				3216E2AE1CD911F6006591FD /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,8 +102,6 @@
 		32A3BE3D1CB57417004E7C6E = {
 			isa = PBXGroup;
 			children = (
-				3216E2AC1CD911F6006591FD /* Realm.framework */,
-				3216E2AD1CD911F6006591FD /* RealmSwift.framework */,
 				32A3BE481CB57417004E7C6E /* World Wide Wardrobe */,
 				32A3BE5D1CB57418004E7C6E /* World Wide WardrobeTests */,
 				32A3BE681CB57418004E7C6E /* World Wide WardrobeUITests */,
@@ -179,7 +167,6 @@
 				32A3BE431CB57417004E7C6E /* Frameworks */,
 				32A3BE441CB57417004E7C6E /* Resources */,
 				3216E2B21CD911F6006591FD /* Embed Frameworks */,
-				3216E2B31CD91306006591FD /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -298,23 +285,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		3216E2B31CD91306006591FD /* Run Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Run Script";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework/strip-frameworks.sh\"";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		32A3BE421CB57417004E7C6E /* Sources */ = {
