@@ -343,9 +343,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="bottomImage" destination="7ze-35-1nx" id="dd8-Nk-rn7"/>
-                        <outlet property="shoesImage" destination="o9m-Ss-Ief" id="yKc-Pt-3Zi"/>
-                        <outlet property="topImage" destination="emf-Th-vtG" id="1QL-I0-M9j"/>
+                        <outlet property="bottomImage" destination="7ze-35-1nx" id="cvd-iP-IxO"/>
+                        <outlet property="shoesImage" destination="o9m-Ss-Ief" id="hM3-Kn-9dL"/>
+                        <outlet property="topImage" destination="emf-Th-vtG" id="xum-h1-3N7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0AQ-JK-Snz" userLabel="First Responder" sceneMemberID="firstResponder"/>
