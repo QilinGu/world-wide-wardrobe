@@ -13,6 +13,7 @@
 		3216E2B01CD911F6006591FD /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3216E2AD1CD911F6006591FD /* RealmSwift.framework */; };
 		3216E2B11CD911F6006591FD /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3216E2AD1CD911F6006591FD /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		323484251CC158B2005444E2 /* ModalInstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 323484241CC158B2005444E2 /* ModalInstructionsViewController.swift */; };
+		325EFD521CDBB329000A82DF /* clothingItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325EFD511CDBB329000A82DF /* clothingItemDetailViewController.swift */; };
 		32890BE01CB6C9A0008A97FE /* ClothesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32890BDF1CB6C9A0008A97FE /* ClothesViewController.swift */; };
 		32890BE21CB6C9BF008A97FE /* outfitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32890BE11CB6C9BF008A97FE /* outfitViewController.swift */; };
 		32890BE61CB6CA89008A97FE /* clothingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32890BE51CB6CA89008A97FE /* clothingItem.swift */; };
@@ -64,6 +65,7 @@
 		3216E2AC1CD911F6006591FD /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		3216E2AD1CD911F6006591FD /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		323484241CC158B2005444E2 /* ModalInstructionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalInstructionsViewController.swift; sourceTree = "<group>"; };
+		325EFD511CDBB329000A82DF /* clothingItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = clothingItemDetailViewController.swift; sourceTree = "<group>"; };
 		32890BDF1CB6C9A0008A97FE /* ClothesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothesViewController.swift; sourceTree = "<group>"; };
 		32890BE11CB6C9BF008A97FE /* outfitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = outfitViewController.swift; sourceTree = "<group>"; };
 		32890BE51CB6CA89008A97FE /* clothingItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = clothingItem.swift; path = ../clothingItem.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				3F833A311CD91428008FA20F /* DetailViewController.swift */,
 				32890BDF1CB6C9A0008A97FE /* ClothesViewController.swift */,
 				32890BE11CB6C9BF008A97FE /* outfitViewController.swift */,
+				325EFD511CDBB329000A82DF /* clothingItemDetailViewController.swift */,
 				323484241CC158B2005444E2 /* ModalInstructionsViewController.swift */,
 				32A3BE4D1CB57417004E7C6E /* Main.storyboard */,
 				32A3BE501CB57417004E7C6E /* Assets.xcassets */,
@@ -328,6 +331,7 @@
 				32A3BE4C1CB57417004E7C6E /* ViewController.swift in Sources */,
 				32A3BE4A1CB57417004E7C6E /* AppDelegate.swift in Sources */,
 				320A28C51CB81F7200479901 /* outfitClass.swift in Sources */,
+				325EFD521CDBB329000A82DF /* clothingItemDetailViewController.swift in Sources */,
 				32890BE01CB6C9A0008A97FE /* ClothesViewController.swift in Sources */,
 				32890BE21CB6C9BF008A97FE /* outfitViewController.swift in Sources */,
 				32DD15381CD7C04E0035590A /* (null) in Sources */,
