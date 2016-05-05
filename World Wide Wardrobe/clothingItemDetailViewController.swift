@@ -46,5 +46,12 @@ class clothingItemDetailViewController: UIViewController, UIImagePickerControlle
         }
     }
     
+    @IBAction func onTappedSaveButton(sender: AnyObject) {
+   
+    
+    
+    
+    }
+    
 
 }

@@ -232,7 +232,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         let addShoeAction = UIAlertAction(title: "Add Shoes", style: .Default) { (action) -> Void in
             let nameTextField = alert.textFields![0] as UITextField
            // self.accessLibrary()
-            self.clothesArray.append(clothingItem(name: nameTextField.text!,clothingItemType: 3,image: UIImage(named: "placeholder7")!))
+            self.clothesArray.append(clothingItem(name: nameTextField.text!,clothingItemType: 1,image: UIImage(named: "placeholder7")!))
             self.shoesImagesArray.append(self.clothesArray[self.clothesArray.count - 1].image!)
             self.checkArrowAlpha()
             let cloth = self.clothesArray.last!

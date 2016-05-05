@@ -277,6 +277,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ME5-Bi-Jgo">
                                 <rect key="frame" x="271" y="142" width="34" height="30"/>
                                 <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="onTappedSaveButton:" destination="mRu-PR-B9g" eventType="touchUpInside" id="8Jv-gD-ATd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yXR-WA-qkv">
                                 <rect key="frame" x="7" y="331" width="94" height="30"/>
@@ -439,6 +442,6 @@
         <image name="wwwicon" width="127" height="127"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="BbS-OF-mTA"/>
+        <segue reference="kYA-Uu-be1"/>
     </inferredMetricsTieBreakers>
 </document>
