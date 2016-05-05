@@ -23,7 +23,8 @@
 		32A3BE541CB57417004E7C6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32A3BE521CB57417004E7C6E /* LaunchScreen.storyboard */; };
 		32A3BE5F1CB57418004E7C6E /* World_Wide_WardrobeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A3BE5E1CB57418004E7C6E /* World_Wide_WardrobeTests.swift */; };
 		32A3BE6A1CB57418004E7C6E /* World_Wide_WardrobeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A3BE691CB57418004E7C6E /* World_Wide_WardrobeUITests.swift */; };
-		32DD15381CD7C04E0035590A /* clothingItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DD15371CD7C04E0035590A /* clothingItemDetailViewController.swift */; };
+		32DD15381CD7C04E0035590A /* (null) in Sources */ = {isa = PBXBuildFile; };
+		3F833A321CD91428008FA20F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F833A311CD91428008FA20F /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +80,7 @@
 		32A3BE651CB57418004E7C6E /* World Wide WardrobeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "World Wide WardrobeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32A3BE691CB57418004E7C6E /* World_Wide_WardrobeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = World_Wide_WardrobeUITests.swift; sourceTree = "<group>"; };
 		32A3BE6B1CB57418004E7C6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		32DD15371CD7C04E0035590A /* clothingItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = clothingItemDetailViewController.swift; sourceTree = "<group>"; };
+		3F833A311CD91428008FA20F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,11 +139,11 @@
 				32A3BE491CB57417004E7C6E /* AppDelegate.swift */,
 				32A3BE4B1CB57417004E7C6E /* ViewController.swift */,
 				320A28C41CB81F7200479901 /* outfitClass.swift */,
+				3F833A311CD91428008FA20F /* DetailViewController.swift */,
 				32890BDF1CB6C9A0008A97FE /* ClothesViewController.swift */,
 				32890BE11CB6C9BF008A97FE /* outfitViewController.swift */,
 				323484241CC158B2005444E2 /* ModalInstructionsViewController.swift */,
 				32A3BE4D1CB57417004E7C6E /* Main.storyboard */,
-				32DD15371CD7C04E0035590A /* clothingItemDetailViewController.swift */,
 				32A3BE501CB57417004E7C6E /* Assets.xcassets */,
 				32A3BE521CB57417004E7C6E /* LaunchScreen.storyboard */,
 				32A3BE551CB57417004E7C6E /* Info.plist */,
@@ -321,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F833A321CD91428008FA20F /* DetailViewController.swift in Sources */,
 				323484251CC158B2005444E2 /* ModalInstructionsViewController.swift in Sources */,
 				32890BE61CB6CA89008A97FE /* clothingItem.swift in Sources */,
 				32A3BE4C1CB57417004E7C6E /* ViewController.swift in Sources */,
@@ -328,7 +330,7 @@
 				320A28C51CB81F7200479901 /* outfitClass.swift in Sources */,
 				32890BE01CB6C9A0008A97FE /* ClothesViewController.swift in Sources */,
 				32890BE21CB6C9BF008A97FE /* outfitViewController.swift in Sources */,
-				32DD15381CD7C04E0035590A /* clothingItemDetailViewController.swift in Sources */,
+				32DD15381CD7C04E0035590A /* (null) in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
