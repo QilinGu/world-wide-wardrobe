@@ -337,11 +337,11 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="emf-Th-vtG">
                                 <rect key="frame" x="180" y="83" width="240" height="128"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ze-35-1nx">
-                                <rect key="frame" x="180" y="236" width="240" height="128"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o9m-Ss-Ief">
                                 <rect key="frame" x="180" y="413" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ze-35-1nx">
+                                <rect key="frame" x="180" y="250" width="240" height="128"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -442,6 +442,6 @@
         <image name="wwwicon" width="127" height="127"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kYA-Uu-be1"/>
+        <segue reference="BbS-OF-mTA"/>
     </inferredMetricsTieBreakers>
 </document>
