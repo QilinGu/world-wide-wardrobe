@@ -13,8 +13,14 @@ class DetailViewController: UIViewController {
     @IBOutlet var shoesImage: UIImageView!
     @IBOutlet var bottomImage: UIImageView!
     @IBOutlet var topImage: UIImageView!
+    var outfit: outfitObject!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        shoesImage.image = outfit.shoesImage
+        bottomImage.image = outfit.bottomImage
+        topImage.image = outfit.topImage
 
         // Do any additional setup after loading the view.
     }
