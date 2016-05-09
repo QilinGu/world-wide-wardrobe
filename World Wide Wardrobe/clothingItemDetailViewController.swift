@@ -16,6 +16,7 @@ class clothingItemDetailViewController: UIViewController, UIImagePickerControlle
     @IBOutlet weak var detailImageView: UIImageView!
     @IBOutlet weak var detailSegmentedController: UISegmentedControl!
     
+    @IBOutlet weak var typePicker: UISegmentedControl!
     @IBOutlet weak var nameTextBox: UITextField!
     @IBOutlet weak var clothingCategoryTextBox: UITextField!
     
@@ -46,11 +47,21 @@ class clothingItemDetailViewController: UIViewController, UIImagePickerControlle
         }
     }
     
-    @IBAction func onTappedSaveButton(sender: AnyObject) {
-   
-    
-    
-    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let dvc = segue.destinationViewController as! ViewController
+        let type = typePicker.selectedSegmentIndex
+        if(type == 0)
+        {
+            dvc.shirtImagesArray.append(detailImageView.image!)
+        }
+        if(type == 1)
+        {
+            dvc.pantsImagesArray.append(detailImageView.image!)
+        }
+        if(type == 2)
+        {
+            dvc.shoesImagesArray.append(detailImageView.image!)
+        }
     }
     
 
