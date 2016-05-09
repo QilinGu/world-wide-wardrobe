@@ -212,7 +212,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyCell" textLabel="e2j-yf-1iy" style="IBUITableViewCellStyleDefault" id="aKR-u1-4U2">
-                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aKR-u1-4U2" id="vdy-fL-HCc">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
@@ -288,6 +288,13 @@
                                     <action selector="onLibraryTappedButton:" destination="mRu-PR-B9g" eventType="touchUpInside" id="4dp-es-2GJ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKu-iD-rA7">
+                                <rect key="frame" x="209" y="331" width="54" height="30"/>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="onCameraTappedButton:" destination="mRu-PR-B9g" eventType="touchUpInside" id="dI4-IS-En7"/>
+                                </connections>
+                            </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jzu-fS-2de">
                                 <rect key="frame" x="271" y="110" width="158" height="29"/>
                                 <segments>
@@ -296,13 +303,6 @@
                                     <segment title="Shoes"/>
                                 </segments>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKu-iD-rA7">
-                                <rect key="frame" x="209" y="331" width="54" height="30"/>
-                                <state key="normal" title="Camera"/>
-                                <connections>
-                                    <action selector="onCameraTappedButton:" destination="mRu-PR-B9g" eventType="touchUpInside" id="dI4-IS-En7"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
