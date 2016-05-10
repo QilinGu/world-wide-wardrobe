@@ -52,6 +52,17 @@ class ClothesViewController: UIViewController, UITableViewDataSource, UITableVie
         return clothesArray.count
     }
 
+    @IBAction func onTappedEdit(sender: UIBarButtonItem) {
+        if sender.tag == 0 {
+            tableView.editing = true
+            sender.tag = 1
+        }
+        else {
+            tableView.editing = false
+            sender.tag = 0
+        }
+    }
+    
     
     
 }

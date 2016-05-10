@@ -241,7 +241,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <toolbarItems/>
+                    <toolbarItems>
+                        <barButtonItem title="Edit" id="Dvw-Ig-kzA">
+                            <connections>
+                                <action selector="onTappedEdit:" destination="b3s-Gs-tfS" id="7oC-6x-scy"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" id="LsA-WW-yDZ">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="FQZ-12-5jF"/>
                     </navigationItem>
@@ -450,6 +456,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="hP3-TY-fmk"/>
-        <segue reference="BbS-OF-mTA"/>
+        <segue reference="kYA-Uu-be1"/>
     </inferredMetricsTieBreakers>
 </document>
