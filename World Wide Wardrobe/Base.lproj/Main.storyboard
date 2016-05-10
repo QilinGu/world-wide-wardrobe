@@ -99,8 +99,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Mh-ue-fX1">
-                                <rect key="frame" x="66" y="111" width="128" height="30"/>
-                                <state key="normal" title="Add Item to Closet"/>
+                                <rect key="frame" x="108" y="111" width="44" height="30"/>
+                                <state key="normal" title="Closet"/>
                                 <connections>
                                     <segue destination="b3s-Gs-tfS" kind="show" identifier="clothesSegue" id="O12-uJ-4jo"/>
                                 </connections>
@@ -335,14 +335,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="emf-Th-vtG">
-                                <rect key="frame" x="180" y="83" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="emf-Th-vtG">
+                                <rect key="frame" x="180" y="52" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="2Gw-Kh-iOt"/>
+                                    <constraint firstAttribute="width" constant="240" id="dwD-s7-gBS"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o9m-Ss-Ief">
-                                <rect key="frame" x="180" y="413" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ze-35-1nx">
+                                <rect key="frame" x="180" y="225" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="rPj-ez-Oxf"/>
+                                    <constraint firstAttribute="height" constant="128" id="zWm-Tt-oBx"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ze-35-1nx">
-                                <rect key="frame" x="180" y="250" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o9m-Ss-Ief">
+                                <rect key="frame" x="180" y="398" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="T4X-1n-VBq"/>
+                                    <constraint firstAttribute="width" constant="240" id="vbV-GC-WdB"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
