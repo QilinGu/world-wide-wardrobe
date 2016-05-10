@@ -64,6 +64,5 @@ class clothingItemDetailViewController: UIViewController, UIImagePickerControlle
         }
         dvc.clothesArray.append(clothingItem(name: nameTextBox.text!, clothingItemType: type, image: detailImageView.image!))
     }
-    // making imageview = image view
 
 }
