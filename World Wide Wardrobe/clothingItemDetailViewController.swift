@@ -18,7 +18,6 @@ class clothingItemDetailViewController: UIViewController, UIImagePickerControlle
     
     @IBOutlet weak var typePicker: UISegmentedControl!
     @IBOutlet weak var nameTextBox: UITextField!
-    @IBOutlet weak var clothingCategoryTextBox: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
