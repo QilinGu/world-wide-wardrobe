@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BNc-G5-lTe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BNc-G5-lTe">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--Modal Instructions View Controller-->
@@ -244,7 +244,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <toolbarItems/>
+                    <toolbarItems>
+                        <barButtonItem title="Edit" id="Dvw-Ig-kzA">
+                            <connections>
+                                <action selector="onTappedEdit:" destination="b3s-Gs-tfS" id="7oC-6x-scy"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" id="LsA-WW-yDZ">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="FQZ-12-5jF"/>
                     </navigationItem>
@@ -291,6 +297,13 @@
                                     <action selector="onLibraryTappedButton:" destination="mRu-PR-B9g" eventType="touchUpInside" id="4dp-es-2GJ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKu-iD-rA7">
+                                <rect key="frame" x="209" y="331" width="54" height="30"/>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="onCameraTappedButton:" destination="mRu-PR-B9g" eventType="touchUpInside" id="dI4-IS-En7"/>
+                                </connections>
+                            </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jzu-fS-2de">
                                 <rect key="frame" x="271" y="110" width="158" height="29"/>
                                 <segments>
@@ -299,23 +312,10 @@
                                     <segment title="Shoes"/>
                                 </segments>
                             </segmentedControl>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Clothing Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MIm-a1-mWD">
-                                <rect key="frame" x="376" y="72" width="111" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKu-iD-rA7">
-                                <rect key="frame" x="209" y="331" width="54" height="30"/>
-                                <state key="normal" title="Camera"/>
-                                <connections>
-                                    <action selector="onCameraTappedButton:" destination="mRu-PR-B9g" eventType="touchUpInside" id="dI4-IS-En7"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="clothingCategoryTextBox" destination="MIm-a1-mWD" id="whv-Ax-gIW"/>
                         <outlet property="detailImageView" destination="DNp-zK-G05" id="sTY-bY-EEo"/>
                         <outlet property="detailSegmentedController" destination="jzu-fS-2de" id="229-v6-2IU"/>
                         <outlet property="nameTextBox" destination="kdC-BO-bww" id="2ec-Ge-CiE"/>
@@ -459,6 +459,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="hP3-TY-fmk"/>
-        <segue reference="BbS-OF-mTA"/>
+        <segue reference="kYA-Uu-be1"/>
     </inferredMetricsTieBreakers>
 </document>

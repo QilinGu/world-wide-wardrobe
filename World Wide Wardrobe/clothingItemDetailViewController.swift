@@ -18,7 +18,6 @@ class clothingItemDetailViewController: UIViewController, UIImagePickerControlle
     
     @IBOutlet weak var typePicker: UISegmentedControl!
     @IBOutlet weak var nameTextBox: UITextField!
-    @IBOutlet weak var clothingCategoryTextBox: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,6 +63,5 @@ class clothingItemDetailViewController: UIViewController, UIImagePickerControlle
         }
         dvc.clothesArray.append(clothingItem(name: nameTextBox.text!, clothingItemType: type, image: detailImageView.image!))
     }
-    
 
 }

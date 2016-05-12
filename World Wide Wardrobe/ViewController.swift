@@ -40,15 +40,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     var outfitName = ""
     
-    /*
-    //Clothes Class for Realm
-    class Clothing: Object {
-        dynamic var name = ""
-        dynamic var type = 1
-        dynamic var category = ""
-    }
-    */
-    
     func checkArrowAlpha()
     {
         if outfitShirtNumber == 0
@@ -112,11 +103,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     }
     
     
-    func accessLibrary() {
-        self.imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
-        presentViewController(imagePicker, animated: true, completion: nil)
-    }
-    
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         imagePicker.dismissViewControllerAnimated(true) { () -> Void in
             let selectedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
@@ -143,6 +129,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             dvc.detailClothingItem = self.clothesArray.last!
         }
     }
+    
+    
     
     override func viewDidLoad()
     {
@@ -265,7 +253,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
     }
 
-  
 
 }
 
