@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BNc-G5-lTe">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BNc-G5-lTe">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--Modal Instructions View Controller-->
@@ -48,7 +48,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evT-TH-w7W">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evT-TH-w7W">
                                 <rect key="frame" x="20" y="253" width="384" height="126"/>
                                 <string key="text">     World Wide Wardrobe is really simple to use! Add your clothes to the app and you'll be able to use their pictures to see what some clothing items would look like without having to try them on! From there, you can save your outfits, in case you want to keep them on your phone for future use.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -68,8 +68,13 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wwwicon" translatesAutoresizingMaskIntoConstraints="NO" id="pzA-M9-F0J">
-                                <rect key="frame" x="279" y="44" width="120" height="120"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="hipsterlogogenerator_1463073152774-1" translatesAutoresizingMaskIntoConstraints="NO" id="OK3-HU-G4W">
+                                <rect key="frame" x="398" y="60" width="163" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="PI9-3Z-p7v"/>
+                                    <constraint firstAttribute="width" constant="150" id="d9g-cp-jUa"/>
+                                    <constraint firstAttribute="height" constant="150" id="moj-fu-hie"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -455,7 +460,7 @@
     <resources>
         <image name="arrowLeft" width="600" height="452"/>
         <image name="arrowRight" width="600" height="452"/>
-        <image name="wwwicon" width="127" height="127"/>
+        <image name="hipsterlogogenerator_1463073152774-1" width="600" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="hP3-TY-fmk"/>
