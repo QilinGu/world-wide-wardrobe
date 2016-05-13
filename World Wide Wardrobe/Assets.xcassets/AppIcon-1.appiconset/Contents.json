@@ -1,8 +1,9 @@
 {
   "images" : [
     {
-      "idiom" : "iphone",
       "size" : "29x29",
+      "idiom" : "iphone",
+      "filename" : "hipsterlogogenerator_1463073152774.png",
       "scale" : "1x"
     },
     {
@@ -16,9 +17,8 @@
       "scale" : "3x"
     },
     {
-      "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "hipsterlogogenerator_1463073152774.png",
+      "size" : "40x40",
       "scale" : "2x"
     },
     {
